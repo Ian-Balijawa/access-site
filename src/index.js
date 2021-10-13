@@ -1,11 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import Modal from "react-modal";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import Footer from 'components/footers/FiveColumnWithBackground.js';
 
-Modal.setAppElement("#root");
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root');
 
 ReactDOM.render(
-  <App />,
-  document.getElementById("root")
+	<>
+		<App />
+		<Footer />
+	</>,
+	document.getElementById('root')
 );

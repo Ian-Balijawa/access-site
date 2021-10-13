@@ -19,7 +19,7 @@ const LinksContainer = tw(
 
 const Link = tw.a`w-full sm:w-auto text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 mt-4 first:mt-0 sm:mt-0 sm:mr-8 sm:last:mr-0 rounded-full font-bold border border-transparent tracking-wide transition duration-300 focus:outline-none focus:shadow-outline`;
 const PrimaryLink = styled.button`
-	background: rgba(153, 0, 0, 0.7);
+	background: rgba(122, 10, 10, 0.7);
 	color: white;
 	padding: 5px;
 	width: 10rem;
@@ -27,7 +27,7 @@ const PrimaryLink = styled.button`
 	margin-right: 3rem;
 
 	&:hover {
-		background: rgb(153, 0, 0);
+		background: rgb(236, 21, 21);
 	}
 `;
 
@@ -45,7 +45,7 @@ const DecoratorBlob2 = tw(
 	SvgDecoratorBlob1
 )`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-primary-700 opacity-50`;
 export default ({
-	text = 'Developers all over the world are happily using Access.',
+	text = 'Developers all over the world are happily using accessadvancedsystems.',
 	primaryLinkText = 'Get Started',
 	primaryLinkUrl = ROUTES.PRODUCTS,
 	secondaryLinkText = 'Contact Us',

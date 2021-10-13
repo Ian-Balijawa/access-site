@@ -43,11 +43,12 @@ export default () => {
 				<WideColumn>
 					<LogoContainer>
 						<LogoImg src={LogoImage} />
-						<LogoText>Access</LogoText>
+						<LogoText>accessadvancedsystems</LogoText>
 					</LogoContainer>
 					<CompanyDescription>
-						Access is an Internet Technology company providing
-						design resources such as website templates and themes.
+						accessadvancedsystems is an Internet Technology company
+						providing design resources such as website templates and
+						themes.
 					</CompanyDescription>
 					<SocialLinksContainer>
 						<SocialLink href='https://facebook.com'>

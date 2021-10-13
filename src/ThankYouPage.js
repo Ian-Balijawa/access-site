@@ -36,7 +36,7 @@ export default () => {
 	window.gtag('js', new Date());
 	window.gtag('config', 'UA-45799926-9');
 
-	const downloadUrl = '/Access-ui.zip';
+	const downloadUrl = '/accessadvancedsystems-ui.zip';
 	useEffect(() => {
 		var iframe = document.createElement('iframe');
 		iframe.style.display = 'none';
@@ -51,7 +51,7 @@ export default () => {
 					<NavRow>
 						<LogoLink href='/'>
 							<img src={logo} alt='' />
-							Access
+							accessadvancedsystems
 						</LogoLink>
 						<div tw='flex flex-col lg:flex-row items-center'>
 							<NavLink
@@ -90,18 +90,20 @@ export default () => {
 							.
 						</Description>
 						<div tw='mt-12 text-center'>
-							I am working on another library similar to Access,
-							with <span tw='font-bold'>more components</span> and
-							a much{' '}
+							I am working on another library similar to
+							accessadvancedsystems, with{' '}
+							<span tw='font-bold'>more components</span> and a
+							much{' '}
 							<span tw='font-bold'>
 								better developer experience
 							</span>
 							.
 						</div>
 						<div tw='mt-12 text-center'>
-							If you liked Access and would like to get updates on
-							the apps We're working on among other things, do{' '}
-							<span tw='font-bold'>follow</span> me on GitHub.
+							If you liked accessadvancedsystems and would like to
+							get updates on the apps We're working on among other
+							things, do <span tw='font-bold'>follow</span> me on
+							GitHub.
 							<div tw='mt-12 flex flex-col items-center'>
 								<div tw='mt-8'>
 									<GitHubButton

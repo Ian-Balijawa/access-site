@@ -22,7 +22,9 @@ export default () => {
 		<AnimationRevealPage>
 			<Header />
 			<MainFeature1
-				subheading={<Subheading>About Access</Subheading>}
+				subheading={
+					<Subheading>About accessadvancedsystems</Subheading>
+				}
 				heading='We are a modern design agency.'
 				buttonRounded={false}
 				primaryButtonText='See Portfolio'

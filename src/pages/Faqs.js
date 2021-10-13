@@ -1,11 +1,18 @@
 import FAQ from 'components/faqs/SingleCol.js';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro';
+import { useEffect } from 'react';
 
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 const HighlightedText = tw.span`text-primary-500`;
 
 const Faqs = () => {
+	useEffect(() => {
+		document.title = 'Frequently asked questions';
+
+		return () => null;
+	}, []);
+
 	return (
 		<FAQ
 			subheading={<Subheading>FAQS</Subheading>}
@@ -34,7 +41,8 @@ const Faqs = () => {
 					answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 				},
 				{
-					question: 'Who has access to my business data ?',
+					question:
+						'Who has accessadvancedsystems to my business data ?',
 					answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 				},
 				{

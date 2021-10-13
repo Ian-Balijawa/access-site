@@ -50,7 +50,7 @@ const DecoratorBlob2 = tw(
 )`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-gray-800 opacity-50`;
 export default ({
 	subheading = 'Download App',
-	text = 'Developers all over the world are happily using Access.',
+	text = 'Developers all over the world are happily using accessadvancedsystems.',
 	link1Text = 'App Store',
 	link1Url = 'http://apple.com',
 	link1IconSrc = appleIconImageSrc,

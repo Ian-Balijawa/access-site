@@ -148,10 +148,10 @@ export default () => {
 				<ThreeColRow>
 					<LogoContainer>
 						<LogoImg src={LogoImage} />
-						<LogoText>Access</LogoText>
+						<LogoText>accessadvancedsystems</LogoText>
 					</LogoContainer>
 					<CopywrightNotice>
-						&copy; 2021 Access All Rights Reserved.
+						&copy; 2021 accessadvancedsystems All Rights Reserved.
 					</CopywrightNotice>
 					<SocialLinksContainer>
 						<SocialLink href='https://facebook.com'>

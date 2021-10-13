@@ -35,7 +35,7 @@ export default () => {
 				<Row>
 					<LogoContainer>
 						<LogoImg src={logo} />
-						<LogoText>Access</LogoText>
+						<LogoText>accessadvancedsystems</LogoText>
 					</LogoContainer>
 					<LinksContainer>
 						<Link href='#'>Home</Link>
@@ -56,7 +56,8 @@ export default () => {
 						</SocialLink>
 					</SocialLinksContainer>
 					<CopyrightText>
-						&copy; Copyright 2020, Access All Rights Reserved.
+						&copy; Copyright 2020, accessadvancedsystems All Rights
+						Reserved.
 					</CopyrightText>
 				</Row>
 			</Content>

@@ -190,7 +190,7 @@
   dependencies:
     "@babel/helper-module-imports" "^7.15.4"
     "@babel/helper-replace-supers" "^7.15.4"
-    "@babel/helper-simple-access" "^7.15.4"
+    "@babel/helper-simple-accessadvancedsystems" "^7.15.4"
     "@babel/helper-split-export-declaration" "^7.15.4"
     "@babel/helper-validator-identifier" "^7.15.7"
     "@babel/template" "^7.15.4"
@@ -228,9 +228,9 @@
     "@babel/traverse" "^7.15.4"
     "@babel/types" "^7.15.4"
 
-"@babel/helper-simple-access@^7.15.4":
+"@babel/helper-simple-accessadvancedsystems@^7.15.4":
   version "7.15.4"
-  resolved "https://registry.yarnpkg.com/@babel/helper-simple-access/-/helper-simple-access-7.15.4.tgz#ac368905abf1de8e9781434b635d8f8674bcc13b"
+  resolved "https://registry.yarnpkg.com/@babel/helper-simple-accessadvancedsystems/-/helper-simple-accessadvancedsystems-7.15.4.tgz#ac368905abf1de8e9781434b635d8f8674bcc13b"
   integrity sha512-UzazrDoIVOZZcTeHHEPYrr1MvTR/K+wgLg6MY6e1CJyaRhbibftF6fR2KU2sFRtI/nERUZR9fBd6aKgBlIBaPg==
   dependencies:
     "@babel/types" "^7.15.4"
@@ -744,7 +744,7 @@
   dependencies:
     "@babel/helper-module-transforms" "^7.15.4"
     "@babel/helper-plugin-utils" "^7.14.5"
-    "@babel/helper-simple-access" "^7.15.4"
+    "@babel/helper-simple-accessadvancedsystems" "^7.15.4"
     babel-plugin-dynamic-import-node "^2.3.3"
 
 "@babel/plugin-transform-modules-systemjs@^7.12.1", "@babel/plugin-transform-modules-systemjs@^7.15.4":
@@ -1725,7 +1725,7 @@
     "@types/aria-query" "^4.2.0"
     aria-query "^4.2.2"
     chalk "^4.1.0"
-    dom-accessibility-api "^0.5.6"
+    dom-accessadvancedsystemsibility-api "^0.5.6"
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
@@ -1740,7 +1740,7 @@
     chalk "^3.0.0"
     css "^3.0.0"
     css.escape "^1.5.1"
-    dom-accessibility-api "^0.5.6"
+    dom-accessadvancedsystemsibility-api "^0.5.6"
     lodash "^4.17.15"
     redent "^3.0.0"
 
@@ -4320,9 +4320,9 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-accessibility-api@^0.5.6:
+dom-accessadvancedsystemsibility-api@^0.5.6:
   version "0.5.8"
-  resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.8.tgz#414813012e065b5dfa8998b990460c0af12a5421"
+  resolved "https://registry.yarnpkg.com/dom-accessadvancedsystemsibility-api/-/dom-accessadvancedsystemsibility-api-0.5.8.tgz#414813012e065b5dfa8998b990460c0af12a5421"
   integrity sha512-rAfghuBPeJldxqsmZQtBbna4TqMgFe4xhYs24vPULNslbmXUdcga+CXiKWzZxyWw0FCkGKPgmizIysIvsAEN8w==
 
 dom-converter@^0.2.0:
@@ -6118,16 +6118,16 @@ is-absolute-url@^3.0.3:
   resolved "https://registry.yarnpkg.com/is-absolute-url/-/is-absolute-url-3.0.3.tgz#96c6a22b6a23929b11ea0afb1836c36ad4a5d698"
   integrity sha512-opmNIX7uFnS96NtPmhWQgQx6/NYFgsUXYMllcfzwWKUMwfo8kku1TvE6hkNcH+Q1ts5cMVrsY7j0bxXQDciu9Q==
 
-is-accessor-descriptor@^0.1.6:
+is-accessadvancedsystemsor-descriptor@^0.1.6:
   version "0.1.6"
-  resolved "https://registry.yarnpkg.com/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz#a9e12cb3ae8d876727eeef3843f8a0897b5c98d6"
+  resolved "https://registry.yarnpkg.com/is-accessadvancedsystemsor-descriptor/-/is-accessadvancedsystemsor-descriptor-0.1.6.tgz#a9e12cb3ae8d876727eeef3843f8a0897b5c98d6"
   integrity sha1-qeEss66Nh2cn7u84Q/igiXtcmNY=
   dependencies:
     kind-of "^3.0.2"
 
-is-accessor-descriptor@^1.0.0:
+is-accessadvancedsystemsor-descriptor@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-accessor-descriptor/-/is-accessor-descriptor-1.0.0.tgz#169c2f6d3df1f992618072365c9b0ea1f6878656"
+  resolved "https://registry.yarnpkg.com/is-accessadvancedsystemsor-descriptor/-/is-accessadvancedsystemsor-descriptor-1.0.0.tgz#169c2f6d3df1f992618072365c9b0ea1f6878656"
   integrity sha512-m5hnHTkcVsPfqx3AKlyttIPb7J+XykHvJP2B9bZDjlhLIoEq4XoK64Vg7boZlVWYK6LUY94dYPEE7Lh0ZkZKcQ==
   dependencies:
     kind-of "^6.0.0"
@@ -6241,7 +6241,7 @@ is-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/is-descriptor/-/is-descriptor-0.1.6.tgz#366d8240dde487ca51823b1ab9f07a10a78251ca"
   integrity sha512-avDYr0SB3DwO9zsMov0gKCESFYqCnE4hq/4z3TdUlukEy5t9C0YRq7HLrsN52NAcqXKaepeCD0n+B0arnVG3Hg==
   dependencies:
-    is-accessor-descriptor "^0.1.6"
+    is-accessadvancedsystemsor-descriptor "^0.1.6"
     is-data-descriptor "^0.1.4"
     kind-of "^5.0.0"
 
@@ -6250,7 +6250,7 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
   resolved "https://registry.yarnpkg.com/is-descriptor/-/is-descriptor-1.0.2.tgz#3b159746a66604b04f8c81524ba365c5f14d86ec"
   integrity sha512-2eis5WqQGV7peooDyLmNEPUrps9+SXX5c9pL3xEB+4e9HnGuDa7mB7kHxHw4CbqS9k1T2hOH3miL8n8WtiYVtg==
   dependencies:
-    is-accessor-descriptor "^1.0.0"
+    is-accessadvancedsystemsor-descriptor "^1.0.0"
     is-data-descriptor "^1.0.0"
     kind-of "^6.0.2"
 

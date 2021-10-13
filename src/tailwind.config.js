@@ -693,7 +693,7 @@ module.exports = {
 		},
 	},
 	variants: {
-		accessibility: ['responsive', 'focus'],
+		accessadvancedsystemsibility: ['responsive', 'focus'],
 		alignContent: ['responsive'],
 		alignItems: ['responsive'],
 		alignSelf: ['responsive'],

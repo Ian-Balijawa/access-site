@@ -11,13 +11,17 @@ import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as YoutubeIcon } from 'images/youtube-icon.svg';
 import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-9.svg';
 
-const Container = tw.div`relative bg-primary-500 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = tw.div`relative bg-primary-500 text-gray-100`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
-const Column = tw.div`px-4 sm:px-0 sm:w-1/3 md:w-auto mt-12`;
+// const Column = tw.div`px-4 sm:px-0 sm:w-1/3 md:w-auto mt-12`;
+const Column = styled.div`
+	padding: 4px;
+	margin-left: 25px;
+`;
 
-const ColumnHeading = tw.h5`uppercase font-bold`;
+const ColumnHeading = tw.h5`py-5 mx-1 uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
@@ -105,10 +109,10 @@ export default () => {
 				<ThreeColRow>
 					<LogoContainer>
 						<LogoImg src={LogoImage} />
-						<LogoText>Access</LogoText>
+						<LogoText>accessadvancedsystems</LogoText>
 					</LogoContainer>
 					<CopywrightNotice>
-						&copy; 2021 Access All Rights Reserved.
+						&copy; 2021 accessadvancedsystems All Rights Reserved.
 					</CopywrightNotice>
 					<SocialLinksContainer>
 						<SocialLink href='https://facebook.com'>

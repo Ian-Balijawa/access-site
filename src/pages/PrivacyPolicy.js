@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
@@ -35,6 +35,11 @@ const Text = styled.div`
 	}
 `;
 export default ({ headingText = 'Privacy Policy' }) => {
+	useEffect(() => {
+		document.title = 'Access | Privacy Policy';
+
+		return () => null;
+	}, []);
 	return (
 		<AnimationRevealPage>
 			<Header />
@@ -80,17 +85,19 @@ export default ({ headingText = 'Privacy Policy' }) => {
 							<li>
 								<p>
 									<strong>You</strong> means the individual
-									accessing or using the Service, or the
-									company, or other legal entity on behalf of
-									which such individual is accessing or using
-									the Service, as applicable.
+									accessadvancedsystems or using the Service,
+									or accessadvancedsystems, or other legal
+									entity on behalf of which such individual is
+									accessadvancedsystems or using the Service,
+									as applicable.
 								</p>
 							</li>
 							<li>
 								<p>
 									<strong>Company</strong> (referred to as
-									either "the Company", "We", "Us" or "Our" in
-									this Agreement) refers to Access.
+									either "accessadvancedsystems", "We", "Us"
+									or "Our" in this Agreement) refers to
+									accessadvancedsystems.
 								</p>
 							</li>
 							<li>
@@ -104,12 +111,13 @@ export default ({ headingText = 'Privacy Policy' }) => {
 							</li>
 							<li>
 								<strong>Account</strong> means a unique account
-								created for You to access our Service or parts
-								of our Service.
+								created for You to accessadvancedsystems our
+								Service or parts of our Service.
 							</li>
 							<li>
-								<strong>Website</strong> refers to Access,
-								accessible from https://Access.com
+								<strong>Website</strong> refers to
+								accessadvancedsystems, accessadvancedsystemsible
+								from https://accessadvancedsystems.com
 							</li>{' '}
 							<li>
 								<strong>Service</strong> refers to the Website.
@@ -122,13 +130,15 @@ export default ({ headingText = 'Privacy Policy' }) => {
 								<p>
 									<strong>Service Provider</strong> means any
 									natural or legal person who processes the
-									data on behalf of the Company. It refers to
-									third-party companies or individuals
-									employed by the Company to facilitate the
+									data on behalf of accessadvancedsystems. It
+									refers to third-party companies or
+									individuals employed by
+									accessadvancedsystems to facilitate the
 									Service, to provide the Service on behalf of
-									the Company, to perform services related to
-									the Service or to assist the Company in
-									analyzing how the Service is used.
+									accessadvancedsystems, to perform services
+									related to the Service or to assist
+									accessadvancedsystems in analyzing how the
+									Service is used.
 								</p>
 							</li>
 							<li>
@@ -197,19 +207,20 @@ export default ({ headingText = 'Privacy Policy' }) => {
 							device identifiers and other diagnostic data.
 						</p>
 						<p>
-							When You access the Service by or through a mobile
-							device, We may collect certain information
-							automatically, including, but not limited to, the
-							type of mobile device You use, Your mobile device
-							unique ID, the IP address of Your mobile device,
-							Your mobile operating system, the type of mobile
-							Internet browser You use, unique device identifiers
-							and other diagnostic data.
+							When You accessadvancedsystems the Service by or
+							through a mobile device, We may collect certain
+							information automatically, including, but not
+							limited to, the type of mobile device You use, Your
+							mobile device unique ID, the IP address of Your
+							mobile device, Your mobile operating system, the
+							type of mobile Internet browser You use, unique
+							device identifiers and other diagnostic data.
 						</p>
 						<p>
 							We may also collect information that Your browser
 							sends whenever You visit our Service or when You
-							access the Service by or through a mobile device.
+							accessadvancedsystems the Service by or through a
+							mobile device.
 						</p>
 
 						<h3>Tracking Technologies and Cookies</h3>
@@ -303,8 +314,8 @@ export default ({ headingText = 'Privacy Policy' }) => {
 
 						<h2>Use of Your Personal Data</h2>
 						<p>
-							The Company may use Personal Data for the following
-							purposes:
+							accessadvancedsystems may use Personal Data for the
+							following purposes:
 						</p>
 						<ul>
 							<li>
@@ -317,9 +328,9 @@ export default ({ headingText = 'Privacy Policy' }) => {
 								<strong>To manage Your Account:</strong> to
 								manage Your registration as a user of the
 								Service. The Personal Data You provide can give
-								You access to different functionalities of the
-								Service that are available to You as a
-								registered user.
+								You accessadvancedsystems to different
+								functionalities of the Service that are
+								available to You as a registered user.
 							</li>
 							<li>
 								<strong>
@@ -409,36 +420,36 @@ export default ({ headingText = 'Privacy Policy' }) => {
 
 						<h2>Retention of Your Personal Data</h2>
 						<p>
-							The Company will retain Your Personal Data only for
-							as long as is necessary for the purposes set out in
-							this Privacy Policy. We will retain and use Your
-							Personal Data to the extent necessary to comply with
-							our legal obligations (for example, if we are
-							required to retain your data to comply with
+							accessadvancedsystems will retain Your Personal Data
+							only for as long as is necessary for the purposes
+							set out in this Privacy Policy. We will retain and
+							use Your Personal Data to the extent necessary to
+							comply with our legal obligations (for example, if
+							we are required to retain your data to comply with
 							applicable laws), resolve disputes, and enforce our
 							legal agreements and policies.
 						</p>
 						<p>
-							The Company will also retain Usage Data for internal
-							analysis purposes. Usage Data is generally retained
-							for a shorter period of time, except when this data
-							is used to strengthen the security or to improve the
-							functionality of Our Service, or We are legally
-							obligated to retain this data for longer time
-							periods.
+							accessadvancedsystems will also retain Usage Data
+							for internal analysis purposes. Usage Data is
+							generally retained for a shorter period of time,
+							except when this data is used to strengthen the
+							security or to improve the functionality of Our
+							Service, or We are legally obligated to retain this
+							data for longer time periods.
 						</p>
 
 						<h2>Transfer of Your Personal Data</h2>
 						<p>
 							Your information, including Personal Data, is
-							processed at the Company's operating offices and in
-							any other places where the parties involved in the
-							processing are located. It means that this
-							information may be transferred to — and maintained
-							on — computers located outside of Your state,
-							province, country or other governmental jurisdiction
-							where the data protection laws may differ than those
-							from Your jurisdiction.
+							processed at accessadvancedsystems's operating
+							offices and in any other places where the parties
+							involved in the processing are located. It means
+							that this information may be transferred to — and
+							maintained on — computers located outside of Your
+							state, province, country or other governmental
+							jurisdiction where the data protection laws may
+							differ than those from Your jurisdiction.
 						</p>
 						<p>
 							Your consent to this Privacy Policy followed by Your
@@ -446,36 +457,38 @@ export default ({ headingText = 'Privacy Policy' }) => {
 							agreement to that transfer.
 						</p>
 						<p>
-							The Company will take all steps reasonably necessary
-							to ensure that Your data is treated securely and in
-							accordance with this Privacy Policy and no transfer
-							of Your Personal Data will take place to an
-							organization or a country unless there are adequate
-							controls in place including the security of Your
-							data and other personal information.
+							accessadvancedsystems will take all steps reasonably
+							necessary to ensure that Your data is treated
+							securely and in accordance with this Privacy Policy
+							and no transfer of Your Personal Data will take
+							place to an organization or a country unless there
+							are adequate controls in place including the
+							security of Your data and other personal
+							information.
 						</p>
 
 						<h2>Disclosure of Your Personal Data</h2>
 						<h3>Business Transactions</h3>
 						<p>
-							If the Company is involved in a merger, acquisition
-							or asset sale, Your Personal Data may be
+							If accessadvancedsystems is involved in a merger,
+							acquisition or asset sale, Your Personal Data may be
 							transferred. We will provide notice before Your
 							Personal Data is transferred and becomes subject to
 							a different Privacy Policy.
 						</p>
 						<h3>Law enforcement</h3>
 						<p>
-							Under certain circumstances, the Company may be
-							required to disclose Your Personal Data if required
-							to do so by law or in response to valid requests by
-							public authorities (e.g. a court or a government
-							agency).
+							Under certain circumstances, accessadvancedsystems
+							may be required to disclose Your Personal Data if
+							required to do so by law or in response to valid
+							requests by public authorities (e.g. a court or a
+							government agency).
 						</p>
 						<h3>Other legal requirements</h3>
 						<p>
-							The Company may disclose Your Personal Data in the
-							good faith belief that such action is necessary to:
+							accessadvancedsystems may disclose Your Personal
+							Data in the good faith belief that such action is
+							necessary to:
 						</p>
 						<ul>
 							<li>Comply with a legal obligation</li>

@@ -94,19 +94,19 @@ import HOME from 'pages/Home.js';
 /* Inner Pages */
 // import LoginPage from "pages/Login.js";
 // import SignupPage from "pages/Signup.js";
-// import PricingPage from "pages/Pricing.js";
-// import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
+
+import AboutUs from 'pages/AboutUs.js';
+import ContactUs from 'pages/ContactUs';
+import TermsOfService from 'pages/TermsOfService.js';
+import PrivacyPolicy from 'pages/PrivacyPolicy.js';
+import Pricing from 'pages/Pricing.js';
 
 import ThankYouPage from 'ThankYouPage.js';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutUsPage from './App';
 import * as ROUTES from './constants/routes';
-import ContactUs from 'pages/ContactUs';
-import TermsOfService from 'pages/TermsOfService.js';
-import PrivacyPolicy from 'pages/PrivacyPolicy.js';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -129,6 +129,12 @@ export default function App() {
 				</Route>
 				<Route exact path={ROUTES.PRIVACY_POLICY}>
 					<PrivacyPolicy />
+				</Route>
+				<Route path={ROUTES.PRICING} exact>
+					<Pricing />
+				</Route>
+				<Route path={ROUTES.ABOUT_US} exact>
+					<AboutUs />
 				</Route>
 				<Route exact path='/'>
 					<HOME />

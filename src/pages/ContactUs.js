@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
@@ -13,6 +13,11 @@ const Email = tw.span`text-sm mt-6 block text-gray-500`;
 const Phone = tw.span`text-sm mt-0 block text-gray-500`;
 
 export default () => {
+	useEffect(() => {
+		document.title = 'accessadvanced | Contact us';
+		return () => null;
+	}, []);
+
 	return (
 		<AnimationRevealPage>
 			<Header />
@@ -29,7 +34,7 @@ export default () => {
 										Endicott, NY 13760
 									</AddressLine>
 								</Address>
-								<Email>contact@Access.com</Email>
+								<Email>contact@accessadvancedsystems.com</Email>
 								<Phone>+1 (203) 991-6988</Phone>
 							</>
 						),
@@ -44,7 +49,7 @@ export default () => {
 									</AddressLine>
 									<AddressLine>Dekalb, IL 60115</AddressLine>
 								</Address>
-								<Email>contact@Access.com</Email>
+								<Email>contact@accessadvancedsystems.com</Email>
 								<Phone>+1 (203) 991-6988</Phone>
 							</>
 						),
@@ -61,7 +66,7 @@ export default () => {
 										Sacramento, CA 95820
 									</AddressLine>
 								</Address>
-								<Email>contact@Access.com</Email>
+								<Email>contact@accessadvancedsystems.com</Email>
 								<Phone>+1 (203) 991-6988</Phone>
 							</>
 						),
@@ -76,7 +81,7 @@ export default () => {
 										Dyersburg, TN 38024
 									</AddressLine>
 								</Address>
-								<Email>contact@Access.com</Email>
+								<Email>contact@accessadvancedsystems.com</Email>
 								<Phone>+1 (203) 991-6988</Phone>
 							</>
 						),
@@ -93,7 +98,7 @@ export default () => {
 										Manchester, NJ 08759
 									</AddressLine>
 								</Address>
-								<Email>contact@Access.com</Email>
+								<Email>contact@accessadvancedsystems.com</Email>
 								<Phone>+1 (203) 991-6988</Phone>
 							</>
 						),
@@ -108,7 +113,7 @@ export default () => {
 									</AddressLine>
 									<AddressLine>Piqua, OH 45356</AddressLine>
 								</Address>
-								<Email>contact@Access.com</Email>
+								<Email>contact@accessadvancedsystems.com</Email>
 								<Phone>+1 (203) 991-6988</Phone>
 							</>
 						),

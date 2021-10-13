@@ -58,7 +58,7 @@ const IllustrationImage = styled.div`
 export default ({
 	logoLinkUrl = '#',
 	illustrationImageSrc = illustration,
-	headingText = 'Sign Up For Access',
+	headingText = 'Sign Up For accessadvancedsystems',
 	socialButtons = [
 		{
 			iconImageSrc: googleIconImageSrc,
@@ -121,7 +121,7 @@ export default ({
 									</span>
 								</SubmitButton>
 								<p tw='mt-6 text-xs text-gray-600 text-center'>
-									I agree to abide by Access's{' '}
+									I agree to abide by accessadvancedsystems's{' '}
 									<a
 										href={tosUrl}
 										tw='border-b border-gray-500 border-dotted'

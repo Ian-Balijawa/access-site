@@ -149,7 +149,7 @@ export default () => {
 					<>
 						People around you are ordering delicious meals using the{' '}
 						<HighlightedTextInverse>
-							Access App.
+							accessadvancedsystems App.
 						</HighlightedTextInverse>
 					</>
 				}

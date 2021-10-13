@@ -54,7 +54,7 @@ export default ({
 	const logoLink = (
 		<LogoLink href='/'>
 			<img src={logoImageSrc} alt='Logo' />
-			Access
+			accessadvancedsystems
 		</LogoLink>
 	);
 	const navLinks = [
