@@ -5,11 +5,10 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 
 import * as ROUTES from '../../constants/routes';
 
-import LogoImage from 'images/logo-light.svg';
+import LogoImage from 'images/logo.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
 import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as YoutubeIcon } from 'images/youtube-icon.svg';
-import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-9.svg';
 
 const Container = tw.div`relative bg-primary-500 text-gray-100`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
@@ -44,14 +43,6 @@ const SocialLink = styled.a`
 		${tw`w-4 h-4`}
 	}
 `;
-
-const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`;
-const DecoratorBlob1 = tw(
-	SvgDecoratorBlob1
-)`absolute top-0 left-0 w-80 h-80 transform -translate-x-20 -translate-y-32 text-primary-700 opacity-50`;
-const DecoratorBlob2 = tw(
-	SvgDecoratorBlob1
-)`absolute bottom-0 right-0 w-80 h-80 transform  translate-x-32 translate-y-48 text-primary-700 opacity-50`;
 
 export default () => {
 	return (
@@ -127,10 +118,6 @@ export default () => {
 					</SocialLinksContainer>
 				</ThreeColRow>
 			</Content>
-			<DecoratorBlobContainer>
-				<DecoratorBlob1 />
-				<DecoratorBlob2 />
-			</DecoratorBlobContainer>
 		</Container>
 	);
 };

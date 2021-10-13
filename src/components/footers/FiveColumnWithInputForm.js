@@ -9,7 +9,16 @@ import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
 import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as YoutubeIcon } from 'images/youtube-icon.svg';
 
-const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+// const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = styled.div`
+	position: relative;
+	background: #e4e4e4;
+	color: #5e5d5d;
+	margin-bottom: 8px;
+	padding: 0 8px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const SixColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -38,7 +47,13 @@ const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-betwee
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
-const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
+const LogoText = styled.h5`
+	margin-left: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	--tw-text-opacity: 1;
+	color: rgba(45, 55, 72, var(--tw-text-opacity));
+`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 

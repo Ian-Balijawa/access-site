@@ -78,7 +78,7 @@ export default () => {
 						Icon: BriefcaseIcon,
 						title: 'Professionalism',
 						description:
-							'We assure you that our templates are designed and created by professional designers.',
+							'We assure you that our systems are designed and created by professional and experienced software engineers.',
 						iconContainerCss: tw`bg-red-300 text-red-800`,
 					},
 				]}
@@ -95,7 +95,7 @@ export default () => {
 						stars: 5,
 						profileImageSrc:
 							'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
-						heading: 'Amazing User Experience',
+						heading: 'Amazing User Experience and user Interface',
 						quote: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
 						customerName: 'Charlotte Hale',
 						customerTitle: 'Director, Delos',

@@ -158,7 +158,7 @@ export default ({
 				<Content2Xl>
 					<NavRow>
 						<LogoLink href='/'>
-							<img src={logo} alt='' />
+							<img src={logo} alt='company brand' />
 							accessadvancedsystems
 						</LogoLink>
 						<div tw='flex flex-wrap justify-center lg:justify-end items-center -mr-12'>

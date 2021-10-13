@@ -35,7 +35,7 @@ const Text = styled.div`
 	}
 `;
 
-export default ({ headingText = 'Terms And Condition' }) => {
+export default ({ headingText = 'Terms And Conditions' }) => {
 	return (
 		<AnimationRevealPage>
 			<Header />
@@ -45,7 +45,7 @@ export default ({ headingText = 'Terms And Condition' }) => {
 						<Heading>{headingText}</Heading>
 					</HeadingRow>
 					<Text>
-						<p>Last updated: April 21, 2020</p>
+						<p>Last updated: October 13, 2021</p>
 
 						<p>
 							Please read these terms and conditions carefully
