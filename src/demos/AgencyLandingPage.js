@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro'; //eslint-disable-line
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
@@ -38,7 +37,7 @@ export default () => (
 						'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
 					quote: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
 					customerName: 'Charlotte Hale',
-					customerTitle: 'CEO, Tesla Inc.',
+					customerTitle: 'CEO, Tesla',
 				},
 				{
 					imageSrc:

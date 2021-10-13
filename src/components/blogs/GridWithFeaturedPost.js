@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components/macro';

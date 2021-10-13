@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
@@ -150,7 +149,7 @@ export default () => {
 					<>
 						People around you are ordering delicious meals using the{' '}
 						<HighlightedTextInverse>
-							Treact App.
+							Access App.
 						</HighlightedTextInverse>
 					</>
 				}

@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';

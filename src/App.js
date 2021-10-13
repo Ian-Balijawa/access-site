@@ -1,6 +1,6 @@
 import 'tailwindcss/dist/base.css';
 import 'styles/globalStyles.css';
-import React from 'react';
+
 import { css } from 'styled-components/macro'; //eslint-disable-line
 
 /*
@@ -86,7 +86,7 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 // import EventLandingPage from "demos/EventLandingPage.js";
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
-// import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
+import HOME from 'pages/Home.js';
 // import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
@@ -98,14 +98,15 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 // import AboutUsPage from "pages/AboutUs.js";
 // import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
-// import TermsOfServicePage from "pages/TermsOfService.js";
-// import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import ComponentRenderer from 'ComponentRenderer.js';
-import MainLandingPage from 'MainLandingPage.js';
 import ThankYouPage from 'ThankYouPage.js';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AboutUsPage from './App';
+import * as ROUTES from './constants/routes';
+import ContactUs from 'pages/ContactUs';
+import TermsOfService from 'pages/TermsOfService.js';
+import PrivacyPolicy from 'pages/PrivacyPolicy.js';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -114,17 +115,23 @@ export default function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path='/components/:type/:subtype/:name'>
-					<ComponentRenderer />
-				</Route>
-				<Route path='/components/:type/:name'>
-					<ComponentRenderer />
-				</Route>
-				<Route path='/thank-you'>
+				<Route exact path={ROUTES.THANK_YOU}>
 					<ThankYouPage />
 				</Route>
-				<Route path='/'>
-					<MainLandingPage />
+				<Route path={ROUTES.ABOUT_US} exact>
+					<AboutUsPage />
+				</Route>
+				<Route exact path={ROUTES.CONTACT_US}>
+					<ContactUs />
+				</Route>
+				<Route exact path={ROUTES.TERMS_OF_SERVICE}>
+					<TermsOfService />
+				</Route>
+				<Route exact path={ROUTES.PRIVACY_POLICY}>
+					<PrivacyPolicy />
+				</Route>
+				<Route exact path='/'>
+					<HOME />
 				</Route>
 			</Switch>
 		</Router>

@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components/macro';
 import { SectionHeading as HeadingTitle } from '../misc/Headings.js';

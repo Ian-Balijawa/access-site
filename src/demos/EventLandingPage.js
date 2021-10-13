@@ -1,4 +1,3 @@
-import React from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import Hero from 'components/heros/BackgroundAsImageWithCenteredContent.js';
 import Features from 'components/features/VerticalWithAlternateImageAndText.js';

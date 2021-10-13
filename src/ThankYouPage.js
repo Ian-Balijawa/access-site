@@ -1,4 +1,3 @@
-import React from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
@@ -11,6 +10,7 @@ import { SectionHeading as HeadingBase } from 'components/misc/Headings';
 import { SectionDescription as DescriptionBase } from 'components/misc/Typography';
 
 import logo from 'images/logo.svg';
+import { useEffect } from 'react';
 
 /* Hero */
 const Row = tw.div`flex`;
@@ -36,8 +36,8 @@ export default () => {
 	window.gtag('js', new Date());
 	window.gtag('config', 'UA-45799926-9');
 
-	const downloadUrl = '/treact-ui.zip';
-	React.useEffect(() => {
+	const downloadUrl = '/Access-ui.zip';
+	useEffect(() => {
 		var iframe = document.createElement('iframe');
 		iframe.style.display = 'none';
 		iframe.src = downloadUrl;
@@ -51,7 +51,7 @@ export default () => {
 					<NavRow>
 						<LogoLink href='/'>
 							<img src={logo} alt='' />
-							Treact
+							Access
 						</LogoLink>
 						<div tw='flex flex-col lg:flex-row items-center'>
 							<NavLink
@@ -90,7 +90,7 @@ export default () => {
 							.
 						</Description>
 						<div tw='mt-12 text-center'>
-							I am working on another library similar to Treact,
+							I am working on another library similar to Access,
 							with <span tw='font-bold'>more components</span> and
 							a much{' '}
 							<span tw='font-bold'>
@@ -99,27 +99,18 @@ export default () => {
 							.
 						</div>
 						<div tw='mt-12 text-center'>
-							If you liked Treact and would like to get updates on
-							the library I am working on among other things, do{' '}
-							<span tw='font-bold'>follow</span> me on
-							Twitter/GitHub.
+							If you liked Access and would like to get updates on
+							the apps We're working on among other things, do{' '}
+							<span tw='font-bold'>follow</span> me on GitHub.
 							<div tw='mt-12 flex flex-col items-center'>
-								<a
-									href='https://twitter.com/owaiswiz?ref_src=twsrc%5Etfw'
-									className='twitter-follow-button'
-									data-size='large'
-									data-show-count='true'
-								>
-									Follow @TwitterDev
-								</a>
 								<div tw='mt-8'>
 									<GitHubButton
-										href='https://github.com/owaiswiz'
+										href='https://github.com/ianbalijawa'
 										data-size='large'
 										data-show-count='true'
-										aria-label='Follow @owaiswiz on GitHub'
+										aria-label='Follow @ianbalijawa on GitHub'
 									>
-										Follow @owaiswiz
+										Follow @ianbalijawa
 									</GitHubButton>
 								</div>
 							</div>

@@ -1,11 +1,10 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 
 import EventLandingPage from 'demos/EventLandingPage.js';
 import HotelTravelLandingPage from 'demos/HotelTravelLandingPage.js';
 import AgencyLandingPage from 'demos/AgencyLandingPage.js';
-import SaaSProductLandingPage from 'demos/SaaSProductLandingPage.js';
+import SaaSProductLandingPage from 'pages/Home.js';
 import RestaurantLandingPage from 'demos/RestaurantLandingPage.js';
 import ServiceLandingPage from 'demos/ServiceLandingPage.js';
 import HostingCloudLandingPage from 'demos/HostingCloudLandingPage.js';

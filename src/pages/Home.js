@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
@@ -9,7 +8,6 @@ import MainFeature2 from 'components/features/TwoColWithTwoHorizontalFeaturesAnd
 import FeatureWithSteps from 'components/features/TwoColWithSteps.js';
 import Pricing from 'components/pricing/ThreePlans.js';
 import Testimonial from 'components/testimonials/TwoColumnWithImageAndRating.js';
-import FAQ from 'components/faqs/SingleCol.js';
 import GetStarted from 'components/cta/GetStarted';
 import Footer from 'components/footers/FiveColumnWithBackground.js';
 import heroScreenshotImageSrc from 'images/hero-screenshot-1.png';
@@ -17,6 +15,7 @@ import macHeroScreenshotImageSrc from 'images/hero-screenshot-2.png';
 import prototypeIllustrationImageSrc from 'images/prototype-illustration.svg';
 import { ReactComponent as BriefcaseIcon } from 'feather-icons/dist/icons/briefcase.svg';
 import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sign.svg';
+import Faqs from './Faqs';
 
 export default () => {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -29,8 +28,8 @@ export default () => {
 				subheading={<Subheading>Features</Subheading>}
 				heading={
 					<>
-						We have Amazing{' '}
-						<HighlightedText>Service.</HighlightedText>
+						We offer Amazing Services to our{' '}
+						<HighlightedText>clients</HighlightedText>
 					</>
 				}
 			/>
@@ -44,7 +43,8 @@ export default () => {
 				subheading={<Subheading>STEPS</Subheading>}
 				heading={
 					<>
-						Easy to <HighlightedText>Get Started.</HighlightedText>
+						Easy to use and{' '}
+						<HighlightedText>Get Started.</HighlightedText>
 					</>
 				}
 				textOnLeft={false}
@@ -79,54 +79,6 @@ export default () => {
 					},
 				]}
 			/>
-			<Pricing
-				subheading={<Subheading>Pricing</Subheading>}
-				heading={
-					<>
-						Reasonable & Flexible{' '}
-						<HighlightedText>Plans.</HighlightedText>
-					</>
-				}
-				plans={[
-					{
-						name: 'Personal',
-						price: '$17.99',
-						duration: 'Monthly',
-						mainFeature: 'For Individuals',
-						features: [
-							'30 Templates',
-							'7 Landing Pages',
-							'12 Internal Pages',
-							'Basic Assistance',
-						],
-					},
-					{
-						name: 'Business',
-						price: '$37.99',
-						duration: 'Monthly',
-						mainFeature: 'For Small Businesses',
-						features: [
-							'60 Templates',
-							'15 Landing Pages',
-							'22 Internal Pages',
-							'Priority Assistance',
-						],
-						featured: true,
-					},
-					{
-						name: 'Enterprise',
-						price: '$57.99',
-						duration: 'Monthly',
-						mainFeature: 'For Large Companies',
-						features: [
-							'90 Templates',
-							'27 Landing Pages',
-							'37 Internal Pages',
-							'Personal Assistance',
-						],
-					},
-				]}
-			/>
 			<Testimonial
 				subheading={<Subheading>Testimonials</Subheading>}
 				heading={
@@ -142,7 +94,7 @@ export default () => {
 						heading: 'Amazing User Experience',
 						quote: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
 						customerName: 'Charlotte Hale',
-						customerTitle: 'Director, Delos Inc.',
+						customerTitle: 'Director, Delos',
 					},
 					{
 						stars: 5,
@@ -156,45 +108,7 @@ export default () => {
 					},
 				]}
 			/>
-			<FAQ
-				subheading={<Subheading>FAQS</Subheading>}
-				heading={
-					<>
-						You have <HighlightedText>Questions ?</HighlightedText>
-					</>
-				}
-				faqs={[
-					{
-						question: 'Are all the templates easily customizable ?',
-						answer: 'Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					},
-					{
-						question:
-							'How long do you usually support an standalone template for ?',
-						answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					},
-					{
-						question:
-							'What kind of payment methods do you accept ?',
-						answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					},
-					{
-						question:
-							'Is there a subscribption service to get the latest templates ?',
-						answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					},
-					{
-						question:
-							'Are the templates compatible with the React ?',
-						answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					},
-					{
-						question:
-							'Do you really support Internet Explorer 11 ?',
-						answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					},
-				]}
-			/>
+			<Faqs />
 			<GetStarted />
 			<Footer />
 		</AnimationRevealPage>
