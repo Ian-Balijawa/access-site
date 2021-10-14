@@ -3,42 +3,36 @@
 		"imageSrc": "../images/hero-screenshot-1.jpg",
 		"firstName": "Dr. Musoke",
 		"lastName": "Herbert",
-		"position": "Executive Director",
-		"description": "lorem ipusm lorem ipusmlorem ipusmlorem ipusm lorem ipusm"
+		"position": "Executive Director"
 	},
 	{
 		"imageSrc": "../images/hero-screenshot-1.jpg",
 		"firstName": "Ocen J",
 		"lastName": "Jackson",
-		"position": "General Manager",
-		"description": "lorem ipusm lorem ipusmlorem ipusmlorem ipusm lorem ipusm"
+		"position": "General Manager"
 	},
 	{
 		"imageSrc": "../images/hero-screenshot-1.jpg",
 		"firstName": "'Ian",
 		"lastName": "'Balijawa",
-		"position": "Systems Manager",
-		"description": "lorem ipusm lorem ipusmlorem ipusmlorem ipusm lorem ipusm"
+		"position": "Systems Manager"
 	},
 	{
 		"imageSrc": "../images/hero-screenshot-1.jpg",
 		"firstName": "'Apio",
 		"lastName": "'Juliet",
-		"position": "'Secretary",
-		"description": "lorem ipusm lorem ipusmlorem ipusmlorem ipusm lorem ipusm"
+		"position": "'Secretary"
 	},
 	{
 		"imageSrc": "../images/hero-screenshot-1.jpg",
 		"firstName": "'Asha",
 		"lastName": "'Edwin",
-		"position": "Sales Manager",
-		"description": "lorem ipusm lorem ipusmlorem ipusmlorem ipusm lorem ipusm"
+		"position": "Sales Manager"
 	},
 	{
 		"imageSrc": "../images/hero-screenshot-1.jpg",
 		"firstName": "'Mbazira",
 		"lastName": "'Samson",
-		"position": "Sales Manager",
-		"description": "lorem ipusm lorem ipusmlorem ipusmlorem ipusm lorem ipusm"
+		"position": "Sales Manager"
 	}
 ]

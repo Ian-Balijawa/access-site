@@ -82,35 +82,6 @@ export default () => {
 					},
 				]}
 			/>
-			<Testimonial
-				subheading={<Subheading>Testimonials</Subheading>}
-				heading={
-					<>
-						Our Clients <HighlightedText>Love Us.</HighlightedText>
-					</>
-				}
-				testimonials={[
-					{
-						stars: 5,
-						profileImageSrc:
-							'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
-						heading: 'Amazing User Experience and user Interface',
-						quote: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-						customerName: 'Charlotte Hale',
-						customerTitle: 'Director, Delos',
-					},
-					{
-						stars: 5,
-						profileImageSrc:
-							'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
-						heading:
-							'Love the Developer Experience and Design Principles !',
-						quote: 'Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-						customerName: 'Adam Cuppy',
-						customerTitle: 'Founder, EventsNYC',
-					},
-				]}
-			/>
 			<Faqs />
 		</AnimationRevealPage>
 	);

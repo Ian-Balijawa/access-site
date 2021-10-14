@@ -1,4 +1,4 @@
-// import { team } from '../../fixtures/team.js';
+import { team } from '../../fixtures/team.json';
 
 import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as LinkedinIcon } from 'images/linkedin-icon.svg';

@@ -9,6 +9,8 @@ import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 import TeamIllustrationSrc from 'images/team-illustration-2.svg';
 import { ReactComponent as SvgDotPattern } from 'images/dot-pattern.svg';
 
+import * as ROUTES from '../../constants/routes';
+
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
@@ -53,7 +55,7 @@ export default ({
 	),
 	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 	primaryButtonText = 'Learn More',
-	primaryButtonUrl = 'https://timerse.com',
+	primaryButtonUrl = ROUTES.ABOUT_US,
 	imageSrc = TeamIllustrationSrc,
 	buttonRounded = true,
 	imageRounded = true,
