@@ -1,0 +1,91 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .card {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #f1e5e5;
+}
+
+.container .card .meta {
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding: 4px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .card .card__icons {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .card .image {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(116, 130, 255, 0.3))), url("../../images//hero-screenshot-1.jpg");
+  background-image: linear-gradient(transparent, rgba(116, 130, 255, 0.3)), url("../../images//hero-screenshot-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 18rem;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 14.2rem;
+}
+
+.container .card .image p {
+  position: relative;
+  top: 15rem;
+  color: #f0f0f0;
+  opacity: .8;
+  cursor: default;
+  margin-left: 8px;
+}
+
+.container .card .card__icons .icon {
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 2px;
+  }
+}
+/*# sourceMappingURL=card.css.map */
