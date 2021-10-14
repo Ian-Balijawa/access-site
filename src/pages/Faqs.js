@@ -7,7 +7,8 @@ import { useEffect } from 'react';
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 const HighlightedText = tw.span`text-primary-500`;
 
-const Faqs = () => {
+const Faqs = props => {
+	const { header } = props;
 	useEffect(() => {
 		document.title = 'Frequently asked questions';
 
@@ -17,7 +18,7 @@ const Faqs = () => {
 	return (
 		<>
 			<AnimationRevealPage>
-				<Header />
+				{!(header === 'false') && <Header />}
 				<FAQ
 					subheading={<Subheading>FAQS</Subheading>}
 					heading={

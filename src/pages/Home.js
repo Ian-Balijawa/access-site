@@ -81,7 +81,7 @@ export default () => {
 					},
 				]}
 			/>
-			<Faqs />
+			<Faqs header='false' />
 		</AnimationRevealPage>
 	);
 };

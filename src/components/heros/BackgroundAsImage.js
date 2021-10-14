@@ -1,7 +1,6 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import * as ROUTES from '../../constants/routes';
-
 import Header, {
 	NavLink,
 	NavLinks,
@@ -11,6 +10,7 @@ import Header, {
 	DesktopNavLinks,
 } from '../headers/light.js';
 
+import { Link } from 'react-router-dom';
 const StyledHeader = styled(Header)`
 	${tw`pt-8 max-w-none`}
 	${DesktopNavLinks} ${NavLink}, ${LogoLink} {
@@ -77,11 +77,14 @@ export default () => {
 							<span style={{ fontSize: '30px' }}>
 								access advanced systems
 							</span>
+							{'  '}
 							<span> We are the best</span>
 							<br />
 							<SlantedBackground>at what we do</SlantedBackground>
 						</Heading>
-						<PrimaryAction>Read More</PrimaryAction>
+						<Link to={ROUTES.ABOUT_US}>
+							<PrimaryAction>Read More</PrimaryAction>
+						</Link>
 					</LeftColumn>
 					<RightColumn>
 						<video
@@ -90,9 +93,10 @@ export default () => {
 							loop
 							muted
 							style={{
-								maxWidth: '130%',
-								marginLeft: '-6rem',
+								maxWidth: '100%',
+								alignSelf: 'center',
 								height: 'auto',
+								borderRadius: '5px',
 								boxShadow: '0px 0px 2px 4px #5668878c',
 							}}
 						/>
