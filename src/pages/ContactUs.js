@@ -18,7 +18,7 @@ export default () => {
 
 	return (
 		<AnimationRevealPage>
-			<Header />
+			<Header hiddenLink={'contact'} />
 			<ContactUsForm />
 			<ContactDetails
 				cards={[

@@ -13,7 +13,7 @@ const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
 	return (
 		<AnimationRevealPage>
-			<Header />
+			<Header hiddenLink={'about'} />
 			<Features
 				subheading={<Subheading>Our Values</Subheading>}
 				heading='We follow these.'

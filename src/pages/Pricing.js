@@ -13,7 +13,7 @@ export default () => {
 	}, []);
 	return (
 		<AnimationRevealPage>
-			<Header />
+			<Header hiddenLink={'pricing'} />
 			<Pricing />
 			<Testimonial heading='Our Paying Customers' />
 			<FAQ />

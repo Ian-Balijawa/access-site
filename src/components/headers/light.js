@@ -62,6 +62,7 @@ export default ({
 	logoLink,
 	links,
 	className,
+	hiddenLink = null,
 	collapseBreakpointClass = 'lg',
 }) => {
 	/*
@@ -77,22 +78,29 @@ export default ({
 	 * changing the defaultLinks variable below below.
 	 * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
 	 */
+	if (hiddenLink && typeof hiddenLink === 'string')
+		hiddenLink = hiddenLink.toLowerCase();
+
 	const defaultLinks = [
 		<NavLinks key={1}>
-			<Link to={ROUTES.ABOUT_US}>
-				<NavLink>About</NavLink>
-			</Link>
-			<Link to={ROUTES.BLOG}>
-				<NavLink>Blog</NavLink>
-			</Link>
-			<Link to={ROUTES.PRICING}>
-				<NavLink>Pricing</NavLink>
-			</Link>
-			<Link to={ROUTES.CONTACT_US}>
-				<PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
-					Contact
-				</PrimaryLink>
-			</Link>
+			{!(hiddenLink === 'about') && (
+				<Link to={ROUTES.ABOUT_US}>
+					<NavLink>About</NavLink>
+				</Link>
+			)}
+			{!(hiddenLink === 'pricing') && (
+				<Link to={ROUTES.PRICING}>
+					<NavLink>Pricing</NavLink>
+				</Link>
+			)}
+
+			{!(hiddenLink === 'contact') && (
+				<Link to={ROUTES.CONTACT_US}>
+					<PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
+						Contact
+					</PrimaryLink>
+				</Link>
+			)}
 		</NavLinks>,
 	];
 
