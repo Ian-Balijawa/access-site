@@ -8,5 +8,6 @@ export const THANK_YOU = '/thank-you';
 export const PRODUCTS = '/products';
 export const FAQS = '/faqs';
 export const TEAM = '/team';
+export const NOT_FOUND = '/not-found';
 export const PRIVACY_POLICY = '/privacy-policy';
 export const TERMS_OF_SERVICE = '/terms-of-service';

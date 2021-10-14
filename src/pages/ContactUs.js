@@ -3,7 +3,6 @@ import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import Header from 'components/headers/light.js';
-import Footer from 'components/footers/FiveColumnWithInputForm.js';
 import ContactUsForm from 'components/forms/TwoColContactUsWithIllustrationFullForm.js';
 import ContactDetails from 'components/cards/ThreeColContactDetails.js';
 
@@ -99,7 +98,7 @@ export default () => {
 									</AddressLine>
 								</Address>
 								<Email>contact@accessadvancedsystems.com</Email>
-								<Phone>+1 (203) 991-6988</Phone>
+								<Phone> +256756008970 </Phone>
 							</>
 						),
 					},
@@ -120,7 +119,6 @@ export default () => {
 					},
 				]}
 			/>
-			<Footer />
 		</AnimationRevealPage>
 	);
 };

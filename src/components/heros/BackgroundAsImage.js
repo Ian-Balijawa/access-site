@@ -1,7 +1,5 @@
-import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
 import * as ROUTES from '../../constants/routes';
 
 import Header, {
@@ -12,7 +10,6 @@ import Header, {
 	NavToggle,
 	DesktopNavLinks,
 } from '../headers/light.js';
-import ResponsiveVideoEmbed from '../../helpers/ResponsiveVideoEmbed.js';
 
 const StyledHeader = styled(Header)`
 	${tw`pt-8 max-w-none`}
@@ -59,9 +56,7 @@ export default () => {
 	const navLinks = [
 		<NavLinks key={1}>
 			<NavLink href={ROUTES.ABOUT_US}>About</NavLink>
-			<NavLink href={ROUTES.BLOG}>Blog</NavLink>
 			<NavLink href={ROUTES.LOCATION}>Locations</NavLink>
-			<NavLink href={ROUTES.PRICING}>Pricing</NavLink>
 		</NavLinks>,
 		<NavLinks key={2}>
 			<PrimaryLink href={ROUTES.CONTACT_US}>Contact Us</PrimaryLink>

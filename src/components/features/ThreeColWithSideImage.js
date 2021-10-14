@@ -104,7 +104,7 @@ export default ({
 							<span className='imageContainer'>
 								<img
 									src={card.imageSrc || defaultCardImage}
-									alt='image'
+									alt='cardimage'
 								/>
 							</span>
 							<span className='textContainer'>

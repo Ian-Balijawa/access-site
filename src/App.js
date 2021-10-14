@@ -104,9 +104,14 @@ import Pricing from 'pages/Pricing.js';
 
 import ThankYouPage from 'ThankYouPage.js';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import AboutUsPage from './App';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from 'react-router-dom';
 import * as ROUTES from './constants/routes';
+import Notfound from 'pages/404';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -117,9 +122,6 @@ export default function App() {
 			<Switch>
 				<Route exact path={ROUTES.THANK_YOU}>
 					<ThankYouPage />
-				</Route>
-				<Route path={ROUTES.ABOUT_US} exact>
-					<AboutUsPage />
 				</Route>
 				<Route exact path={ROUTES.CONTACT_US}>
 					<ContactUs />
@@ -136,29 +138,14 @@ export default function App() {
 				<Route path={ROUTES.ABOUT_US} exact>
 					<AboutUs />
 				</Route>
+				<Route exact path={ROUTES.NOT_FOUND}>
+					<Notfound />
+				</Route>
 				<Route exact path='/'>
 					<HOME />
 				</Route>
+				<Redirect to={ROUTES.NOT_FOUND} />
 			</Switch>
 		</Router>
 	);
 }
-
-// export default EventLandingPage;
-// export default HotelTravelLandingPage;
-// export default AgencyLandingPage;
-// export default SaaSProductLandingPage;
-// export default RestaurantLandingPage;
-// export default ServiceLandingPage;
-// export default HostingCloudLandingPage;
-
-// export default LoginPage;
-// export default SignupPage;
-// export default PricingPage;
-// export default AboutUsPage;
-// export default ContactUsPage;
-// export default BlogIndexPage;
-// export default TermsOfServicePage;
-// export default PrivacyPolicyPage;
-
-// export default MainLandingPage;

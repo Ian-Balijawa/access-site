@@ -1,13 +1,14 @@
-import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
+
+import * as ROUTES from '../../constants/routes';
 
 import LogoImage from 'images/logo.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
 import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as YoutubeIcon } from 'images/youtube-icon.svg';
+import { useState } from 'react';
 
 // const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Container = styled.div`
@@ -66,6 +67,15 @@ const SocialLink = styled.a`
 `;
 
 export default () => {
+	const [emailAddress, setEmailAddress] = useState('');
+
+	const handleSubmit = e => {
+		e.preventDefault();
+
+		alert(
+			`Your email Address ${emailAddress} has been successfully submitted`
+		);
+	};
 	return (
 		<Container>
 			<Content>
@@ -74,50 +84,10 @@ export default () => {
 						<ColumnHeading>Main</ColumnHeading>
 						<LinkList>
 							<LinkListItem>
-								<Link href='#'>Blog</Link>
+								<Link href={ROUTES.FAQS}>FAQs</Link>
 							</LinkListItem>
 							<LinkListItem>
-								<Link href='#'>FAQs</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Support</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>About Us</Link>
-							</LinkListItem>
-						</LinkList>
-					</Column>
-					<Column>
-						<ColumnHeading>Product</ColumnHeading>
-						<LinkList>
-							<LinkListItem>
-								<Link href='#'>Log In</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Personal</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Business</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Team</Link>
-							</LinkListItem>
-						</LinkList>
-					</Column>
-					<Column>
-						<ColumnHeading>Press</ColumnHeading>
-						<LinkList>
-							<LinkListItem>
-								<Link href='#'>Logos</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Events</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Stories</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Office</Link>
+								<Link href={ROUTES.ABOUT_US}>About Us</Link>
 							</LinkListItem>
 						</LinkList>
 					</Column>
@@ -125,16 +95,14 @@ export default () => {
 						<ColumnHeading>Legal</ColumnHeading>
 						<LinkList>
 							<LinkListItem>
-								<Link href='#'>GDPR</Link>
+								<Link href={ROUTES.PRIVACY_POLICY}>
+									Privacy Policy
+								</Link>
 							</LinkListItem>
 							<LinkListItem>
-								<Link href='#'>Privacy Policy</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Terms of Service</Link>
-							</LinkListItem>
-							<LinkListItem>
-								<Link href='#'>Disclaimer</Link>
+								<Link href={ROUTES.TERMS_OF_SERVICE}>
+									Terms of Service
+								</Link>
 							</LinkListItem>
 						</LinkList>
 					</Column>
@@ -147,9 +115,17 @@ export default () => {
 								We deliver high quality blog posts written by
 								professionals weekly. And we promise no spam.
 							</SubscribeText>
-							<SubscribeForm method='get' action='#'>
+							<SubscribeForm
+								onSubmit={handleSubmit}
+								method='get'
+								action='#'
+							>
 								<Input
 									type='email'
+									value={emailAddress}
+									onChange={({ target }) =>
+										setEmailAddress(target.value)
+									}
 									placeholder='Your Email Address'
 								/>
 								<SubscribeButton type='submit'>

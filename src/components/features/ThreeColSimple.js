@@ -105,7 +105,7 @@ export default ({
 								>
 									<img
 										src={card.imageSrc}
-										alt='image'
+										alt='cardimage'
 										css={imageCss}
 									/>
 								</span>

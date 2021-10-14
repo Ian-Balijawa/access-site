@@ -1,6 +1,5 @@
 import FAQ from 'components/faqs/SingleCol.js';
 import tw from 'twin.macro';
-import { css } from 'styled-components/macro';
 import { useEffect } from 'react';
 
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;

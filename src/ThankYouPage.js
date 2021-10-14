@@ -1,8 +1,6 @@
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
-import styled from 'styled-components';
-import { css } from 'styled-components/macro';
 import GitHubButton from 'react-github-btn';
 
 import { LogoLink } from 'components/headers/light.js';
@@ -50,7 +48,7 @@ export default () => {
 				<Content2Xl>
 					<NavRow>
 						<LogoLink href='/'>
-							<img src={logo} alt='' />
+							<img src={logo} alt='company brand' />
 							accessadvancedsystems
 						</LogoLink>
 						<div tw='flex flex-col lg:flex-row items-center'>
@@ -74,7 +72,7 @@ export default () => {
 							</NavLink>
 							<PrimaryNavLink
 								target='_blank'
-								href='https://gum.co/QaruQ'
+								// href='https://gum.co/QaruQ'  TODO
 							>
 								Download Now
 							</PrimaryNavLink>
