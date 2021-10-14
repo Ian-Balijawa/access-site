@@ -101,6 +101,8 @@ import ContactUs from 'pages/ContactUs';
 import TermsOfService from 'pages/TermsOfService.js';
 import PrivacyPolicy from 'pages/PrivacyPolicy.js';
 import Pricing from 'pages/Pricing.js';
+import Notfound from 'pages/404';
+import Faqs from 'pages/Faqs';
 
 import ThankYouPage from 'ThankYouPage.js';
 
@@ -111,7 +113,6 @@ import {
 	Redirect,
 } from 'react-router-dom';
 import * as ROUTES from './constants/routes';
-import Notfound from 'pages/404';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -137,6 +138,9 @@ export default function App() {
 				</Route>
 				<Route path={ROUTES.ABOUT_US} exact>
 					<AboutUs />
+				</Route>
+				<Route path={ROUTES.FAQS} exact>
+					<Faqs />
 				</Route>
 				<Route exact path={ROUTES.NOT_FOUND}>
 					<Notfound />

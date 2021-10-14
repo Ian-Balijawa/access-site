@@ -75,7 +75,7 @@ export default () => {
 						</Notification>
 						<Heading>
 							<span style={{ fontSize: '30px' }}>
-								accessadvancedsystems
+								access advanced systems
 							</span>
 							<span> We are the best</span>
 							<br />
@@ -84,7 +84,18 @@ export default () => {
 						<PrimaryAction>Read More</PrimaryAction>
 					</LeftColumn>
 					<RightColumn>
-						<video img='/video/showcase.mp4' />
+						<video
+							src='/videos/showcase.mp4'
+							autoPlay
+							loop
+							muted
+							style={{
+								maxWidth: '130%',
+								marginLeft: '-6rem',
+								height: 'auto',
+								boxShadow: '0px 0px 2px 4px #5668878c',
+							}}
+						/>
 					</RightColumn>
 				</TwoColumn>
 			</HeroContainer>

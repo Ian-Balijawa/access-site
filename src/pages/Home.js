@@ -6,7 +6,6 @@ import Features from 'components/features/ThreeColWithSideImage.js';
 import MainFeature from 'components/features/TwoColWithButton.js';
 import MainFeature2 from 'components/features/TwoColWithTwoHorizontalFeaturesAndButton.js';
 import FeatureWithSteps from 'components/features/TwoColWithSteps.js';
-import Testimonial from 'components/testimonials/TwoColumnWithImageAndRating.js';
 import heroScreenshotImageSrc from 'images/hero-screenshot-1.png';
 import macHeroScreenshotImageSrc from 'images/hero-screenshot-2.png';
 import prototypeIllustrationImageSrc from 'images/prototype-illustration.svg';
@@ -20,7 +19,7 @@ export default () => {
 	const HighlightedText = tw.span`text-primary-500`;
 
 	useEffect(() => {
-		document.title = 'accessadvancedsystems | Home';
+		document.title = 'access | Home';
 		return () => null;
 	}, []);
 

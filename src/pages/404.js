@@ -7,7 +7,7 @@ const Notfound = () => {
 		document.title = '404 | NOT found';
 		setTimeout(() => {
 			history.push('/');
-		}, 2000);
+		}, 1000);
 		return () => null;
 	}, [history]);
 	return (

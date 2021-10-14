@@ -54,19 +54,13 @@ export default () => {
 						<div tw='flex flex-col lg:flex-row items-center'>
 							<NavLink
 								target='_blank'
-								href='https://owaiskhan.me/post/free-tailwindcss-react-ui-kit'
-							>
-								License & Usage
-							</NavLink>
-							<NavLink
-								target='_blank'
-								href='https://twitter.com/owaiswiz'
+								href='https://twitter.com/ianbalijawa'
 							>
 								Twitter
 							</NavLink>
 							<NavLink
 								target='_blank'
-								href='https://owaiskhan.me'
+								href='https://github.com/Ian-Balijawa'
 							>
 								Who Am I ?
 							</NavLink>
@@ -88,20 +82,18 @@ export default () => {
 							.
 						</Description>
 						<div tw='mt-12 text-center'>
-							I am working on another library similar to
-							accessadvancedsystems, with{' '}
-							<span tw='font-bold'>more components</span> and a
+							I am working on web applications and websites
+							similar to accessadvancedsystems. We at
+							accessadvanced are working tirelessly{' '}
+							<span tw='font-bold'>on more systems</span> and a
 							much{' '}
-							<span tw='font-bold'>
-								better developer experience
-							</span>
-							.
+							<span tw='font-bold'>better user experience.</span>.
 						</div>
 						<div tw='mt-12 text-center'>
-							If you liked accessadvancedsystems and would like to
-							get updates on the apps We're working on among other
-							things, do <span tw='font-bold'>follow</span> me on
-							GitHub.
+							If you liked accessadvancedsystems website and would
+							like to get updates on the apps and systems We're
+							working on among other things, do{' '}
+							<span tw='font-bold'>follow</span> me on GitHub.
 							<div tw='mt-12 flex flex-col items-center'>
 								<div tw='mt-8'>
 									<GitHubButton

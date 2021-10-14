@@ -2,7 +2,6 @@ import React from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
 import Header from 'components/headers/light.js';
-import MainFeature1 from 'components/features/TwoColWithButton.js';
 import Features from 'components/features/ThreeColSimple.js';
 import TeamCardGrid from 'components/cards/ProfileThreeColGrid.js';
 
@@ -15,23 +14,6 @@ export default () => {
 	return (
 		<AnimationRevealPage>
 			<Header />
-			<MainFeature1
-				subheading={
-					<Subheading>About accessadvancedsystems</Subheading>
-				}
-				heading='We are a modern design agency.'
-				buttonRounded={false}
-				primaryButtonText='See Portfolio'
-				imageSrc='https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80'
-			/>
-			<MainFeature1
-				subheading={<Subheading>Our Vision</Subheading>}
-				heading='We aim to disrupt the design space.'
-				buttonRounded={false}
-				primaryButtonText='Contact Us'
-				imageSrc='https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80'
-				textOnLeft={false}
-			/>
 			<Features
 				subheading={<Subheading>Our Values</Subheading>}
 				heading='We follow these.'
