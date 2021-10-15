@@ -10,7 +10,8 @@ import Header, {
 	DesktopNavLinks,
 } from '../Header/light.js';
 
-import { Link } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom';
+
 const StyledHeader = styled(Header)`
 	${tw`pt-8 max-w-none`}
 	${DesktopNavLinks} ${NavLink}, ${LogoLink} {
@@ -52,13 +53,17 @@ const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-
 
 const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
+const Link = styled(ReactRouterLink)`
+	border-radius: 20px;
+`;
 export default () => {
 	const navLinks = [
 		<NavLinks key={1}>
 			<NavLink href={ROUTES.ABOUT_US}>About</NavLink>
-			<NavLink href={ROUTES.LOCATION}>Locations</NavLink>
+			<NavLink href={ROUTES.PRODUCTS}>Systems</NavLink>
+			<NavLink href={ROUTES.PRODUCTS}>Download</NavLink>
 		</NavLinks>,
-		<NavLinks key={2}>
+		<NavLinks key={3}>
 			<PrimaryLink href={ROUTES.CONTACT_US}>Contact Us</PrimaryLink>
 		</NavLinks>,
 	];
@@ -83,7 +88,27 @@ export default () => {
 							<SlantedBackground>at what we do</SlantedBackground>
 						</Heading>
 						<Link to={ROUTES.ABOUT_US}>
-							<PrimaryAction>Read More</PrimaryAction>
+							<PrimaryAction
+								style={{
+									marginLeft: '.8rem',
+									borderRadius: '20px',
+									textTransform: 'uppercase',
+								}}
+							>
+								Read More
+							</PrimaryAction>
+						</Link>
+						<Link to={ROUTES.PRODUCTS}>
+							<PrimaryAction
+								style={{
+									marginLeft: '.8rem',
+									borderRadius: '20px',
+									textTransform: 'uppercase',
+									height: '4rem',
+								}}
+							>
+								Download and Get Started
+							</PrimaryAction>
 						</Link>
 					</LeftColumn>
 					<RightColumn>

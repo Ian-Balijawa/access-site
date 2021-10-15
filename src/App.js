@@ -47,7 +47,7 @@ export default function App() {
 				<Route exact path={ROUTES.PRIVACY_POLICY}>
 					<PrivacyPolicy />
 				</Route>
-				<Route path={ROUTES.PRICING} exact>
+				<Route path={ROUTES.PRODUCTS} exact>
 					<Pricing />
 				</Route>
 				<Route path={ROUTES.ABOUT_US} exact>

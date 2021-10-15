@@ -10,9 +10,10 @@ import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
 import * as ROUTES from '../../constants/routes';
 import { Link } from 'react-router-dom';
 
-const Header = tw.header`
-  flex justify-between items-center
-  max-w-screen-xl mx-auto
+const Header = styled.header`
+	${tw` flex justify-between items-center max-w-screen-xl mx-auto`}
+
+	margin: 0px 2rem;
 `;
 
 export const NavLinks = tw.div`inline-block`;
@@ -83,16 +84,21 @@ export default ({
 	const defaultLinks = [
 		<NavLinks key={1}>
 			{!(hiddenLink === 'about') && (
-				<Link to={ROUTES.ABOUT_US}>
+				<Link to={ROUTES.ABOUT_US} style={{ marginBottom: '2rem' }}>
 					<NavLink>About</NavLink>
 				</Link>
 			)}
-			{!(hiddenLink === 'pricing') && (
-				<Link to={ROUTES.PRICING}>
-					<NavLink>Pricing</NavLink>
+
+			{!(hiddenLink === 'download') && (
+				<Link
+					to={ROUTES.PRODUCTS}
+					style={{ marginRight: '4px', marginBottom: '2rem' }}
+				>
+					<PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
+						Download
+					</PrimaryLink>
 				</Link>
 			)}
-
 			{!(hiddenLink === 'contact') && (
 				<Link to={ROUTES.CONTACT_US}>
 					<PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
