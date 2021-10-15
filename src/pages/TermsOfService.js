@@ -79,11 +79,11 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 								<strong>Company</strong> (referred to as either
 								"accessadvancedsystems", "We", "Us" or "Our" in
 								this Agreement) refers to accessadvancedsystems,
-								Navi Mumbai.
+								Kampala, Uganda.
 							</li>
 							<li>
-								<strong>Country</strong> refers to: Maharashtra,
-								India
+								<strong>Country</strong> refers to:Kampala,
+								Uganda
 							</li>
 							<li>
 								<strong>Service</strong> refers to the Website.
@@ -106,16 +106,15 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 							</li>
 							<li>
 								<strong>Website</strong> refers to
-								accessadvancedsystems, accessadvancedsystemsible
-								from https://accessadvancedsystems.com
+								accessadvancedsystems, accessible from
+								https://accessadvancedsystems.com
 							</li>
 							<li>
 								<strong>You</strong> means the individual
-								accessadvancedsystemsing or using the Service,
-								or accessadvancedsystems, or other legal entity
-								on behalf of which such individual is
-								accessadvancedsystemsing or using the Service,
-								as applicable.
+								accessing or using the Service, or
+								accessadvancedsystems, or other legal entity on
+								behalf of which such individual is accessing or
+								using the Service, as applicable.
 							</li>
 						</ul>
 
@@ -128,18 +127,17 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 							all users regarding the use of the Service.
 						</p>
 						<p>
-							Your accessadvancedsystems to and use of the Service
-							is conditioned on Your acceptance of and compliance
-							with these Terms and Conditions. These Terms and
-							Conditions apply to all visitors, users and others
-							who accessadvancedsystems or use the Service.
+							Your access to and use of the Service is conditioned
+							on Your acceptance of and compliance with these
+							Terms and Conditions. These Terms and Conditions
+							apply to all visitors, users and others who access
+							or use the Service.
 						</p>
 						<p>
-							By accessadvancedsystemsing or using the Service You
-							agree to be bound by these Terms and Conditions. If
-							You disagree with any part of these Terms and
-							Conditions then You may not accessadvancedsystems
-							the Service.
+							By accessing or using the Service You agree to be
+							bound by these Terms and Conditions. If You disagree
+							with any part of these Terms and Conditions then You
+							may not access the Service.
 						</p>
 						<p>
 							You represent that you are over the age of 18. The
@@ -147,16 +145,16 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 							Service.
 						</p>
 						<p>
-							Your accessadvancedsystems to and use of the Service
-							is also conditioned on Your acceptance of and
-							compliance with the Privacy Policy of
-							accessadvancedsystems. Our Privacy Policy describes
-							Our policies and procedures on the collection, use
-							and disclosure of Your personal information when You
-							use the Application or the Website and tells You
-							about Your privacy rights and how the law protects
-							You. Please read Our Privacy Policy carefully before
-							using Our Service.
+							Your access to and use of the Service is also
+							conditioned on Your acceptance of and compliance
+							with the Privacy Policy of accessadvancedsystems.
+							Our Privacy Policy describes Our policies and
+							procedures on the collection, use and disclosure of
+							Your personal information when You use the
+							Application or the Website and tells You about Your
+							privacy rights and how the law protects You. Please
+							read Our Privacy Policy carefully before using Our
+							Service.
 						</p>
 
 						<h1>Links to Other Websites</h1>
@@ -168,28 +166,27 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 						<p>
 							accessadvancedsystems has no control over, and
 							assumes no responsibility for, the content, privacy
-							policies, or practices of any third party web sites
+							policies, or practices of any third party websites
 							or services. You further acknowledge and agree that
 							the Company shall not be responsible or liable,
 							directly or indirectly, for any damage or loss
 							caused or alleged to be caused by or in connection
 							with the use of or reliance on any such content,
 							goods or services available on or through any such
-							web sites or services.
+							websites or services.
 						</p>
 						<p>
 							We strongly advise You to read the terms and
 							conditions and privacy policies of any third-party
-							web sites or services that You visit.
+							websites or services that You visit.
 						</p>
 
 						<h1>Termination</h1>
 						<p>
-							We may terminate or suspend Your
-							accessadvancedsystems immediately, without prior
-							notice or liability, for any reason whatsoever,
-							including without limitation if You breach these
-							Terms and Conditions.
+							We may terminate or suspend Your access immediately,
+							without prior notice or liability, for any reason
+							whatsoever, including without limitation if You
+							breach these Terms and Conditions.
 						</p>
 						<p>
 							Upon termination, Your right to use the Service will
@@ -208,14 +205,14 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 						</p>
 						<p>
 							To the maximum extent permitted by applicable law,
-							in no event shall accessadvancedsystems or its
-							suppliers be liable for any special, incidental,
-							indirect, or consequential damages whatsoever
-							(including, but not limited to, damages for loss of
-							profits, loss of data or other information, for
-							business interruption, for personal injury, loss of
-							privacy arising out of or in any way related to the
-							use of or inability to use the Service, third-party
+							in no event shall access or its suppliers be liable
+							for any special, incidental, indirect, or
+							consequential damages whatsoever (including, but not
+							limited to, damages for loss of profits, loss of
+							data or other information, for business
+							interruption, for personal injury, loss of privacy
+							arising out of or in any way related to the use of
+							or inability to use the Service, third-party
 							software and/or third-party hardware used with the
 							Service, or otherwise in connection with any
 							provision of this Terms), even if
@@ -363,11 +360,11 @@ export default ({ headingText = 'Terms And Conditions' }) => {
 							change will be determined at Our sole discretion.
 						</p>
 						<p>
-							By continuing to accessadvancedsystems or use Our
-							Service after those revisions become effective, You
-							agree to be bound by the revised terms. If You do
-							not agree to the new terms, in whole or in part,
-							please stop using the website and the Service.
+							By continuing to access or use Our Service after
+							those revisions become effective, You agree to be
+							bound by the revised terms. If You do not agree to
+							the new terms, in whole or in part, please stop
+							using the website and the Service.
 						</p>
 
 						<h1>Contact Us</h1>

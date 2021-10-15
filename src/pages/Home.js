@@ -1,6 +1,5 @@
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
-import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import Hero from 'components/Hero/BackgroundAsImage';
 import Features from 'components/Features/ThreeColWithSideImage.js';
 import MainFeature from 'components/Features/TwoColWithButton.js';
@@ -24,7 +23,7 @@ export default () => {
 	}, []);
 
 	return (
-		<AnimationRevealPage>
+		<>
 			<Hero roundedHeaderButton={false} />
 			<Features
 				subheading={<Subheading>Features</Subheading>}
@@ -82,6 +81,6 @@ export default () => {
 				]}
 			/>
 			<Faqs header='false' />
-		</AnimationRevealPage>
+		</>
 	);
 };
