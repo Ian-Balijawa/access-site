@@ -109,11 +109,13 @@ export default () => {
 					<SubscribeNewsletterColumn>
 						<SubscribeNewsletterContainer>
 							<ColumnHeading>
-								Subscribe to our Newsletter
+								Subscribe to our Newsletter and Youtube Channel
 							</ColumnHeading>
 							<SubscribeText>
-								We deliver high quality blog posts written by
-								professionals weekly. And we promise no spam.
+								We deliver high quality posts written by
+								professionals weekly and we also upload videos
+								about the systems to our youtube channel. And we
+								promise no spam.
 							</SubscribeText>
 							<SubscribeForm
 								onSubmit={handleSubmit}

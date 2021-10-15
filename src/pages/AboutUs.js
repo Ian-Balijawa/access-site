@@ -1,4 +1,3 @@
-import React from 'react';
 import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
 import Header from 'components/Header/light.js';

@@ -6,20 +6,23 @@ const Product = () => {
 	const [toggleCurrency, setToggleCurrency] = useState(false);
 	const [searchTerm, setSearchTerm] = useState('');
 
-	let currency = toggleCurrency ? 'UGX' : '$';
+	let currency = toggleCurrency ? 'UGX' : 'USD';
 	let rateFactor = currency === 'UGX' ? 1 : 3540;
 
-	const handleSearch = searchTerm => {
-		const filtered = systems.filter(system => system.id === searchTerm);
+	let reactElementkey = 0;
 
-		if (filtered) {
-			// systems = filtered;
+	const handleSearch = term => {
+		let data = [...systems];
+		const filtered = data.filter(system => system.name === term);
+		if (filtered.length > 0) {
+			data = filtered;
+			console.log(data, term);
 		}
 	};
 
 	return (
 		<>
-			<div className='header-container'>
+			<div className='product-header-container'>
 				<div>
 					<input
 						type='text'
@@ -28,7 +31,7 @@ const Product = () => {
 						placeholder='Search Systems'
 					/>
 					<button
-						className='search-key'
+						className='search-btn'
 						onClick={() => handleSearch(searchTerm)}
 					>
 						Search
@@ -41,17 +44,17 @@ const Product = () => {
 						setToggleCurrency(toggleCurrency => !toggleCurrency)
 					}
 				>
-					switch to {currency === '$' ? 'USD' : currency}
+					switch to {currency}
 				</button>
 			</div>
-			<div className='container'>
+			<div className='product-container'>
 				{systems.map(system => (
-					<div className='card' key={system.id}>
-						<div className='image'></div>
+					<div className='product-card' key={reactElementkey++}>
+						<img src='/images/mac-school-system.png' alt='' />
 						<p className='name'>{system.name}</p>
 						<p className='description'>{system.description}</p>
 						<div className='btns'>
-							<div className='download-svg'>
+							<div className='product-download'>
 								<button className='btn download'>
 									Download
 								</button>
@@ -84,5 +87,4 @@ const Product = () => {
 		</>
 	);
 };
-
 export default Product;

@@ -1,13 +1,13 @@
 .container {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   align-items: center;
   -ms-flex-line-pack: center;
@@ -17,10 +17,13 @@
 }
 
 .container .card {
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 2rem;
+  width: 17rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -30,19 +33,16 @@
           justify-content: space-between;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background: #f1e5e5;
 }
 
 .container .card .meta {
-  border-top: 1px solid #ccc;
-  background: #fff;
-  padding: 4px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 5px;
 }
 
 .container .card .card__icons {
@@ -50,31 +50,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
+  padding: 3px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.container .card .image {
+.container .card img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5psx;
   margin-top: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(116, 130, 255, 0.3))), url("../../../images/hero-screenshot-1.jpg");
-  background-image: linear-gradient(transparent, rgba(116, 130, 255, 0.3)), url("../../../images/hero-screenshot-1.jpg");
   background-position: center;
   background-size: cover;
-  height: 18rem;
-  width: 14.2rem;
-}
-
-.container .card .image p {
+  height: 16rem;
   position: relative;
-  top: 15rem;
-  color: #f0f0f0;
-  opacity: .8;
-  cursor: default;
-  margin-left: 8px;
+  top: -10px;
 }
 
 .container .card .card__icons .icon {

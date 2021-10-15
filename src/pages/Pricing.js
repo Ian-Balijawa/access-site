@@ -6,7 +6,7 @@ import Product from 'components/Products/Product';
 
 export default () => {
 	useEffect(() => {
-		document.title = 'Product - Pricing';
+		document.title = 'System | Pricing';
 
 		return () => null;
 	}, []);
