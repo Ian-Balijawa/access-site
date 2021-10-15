@@ -4,7 +4,7 @@ import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as LinkedinIcon } from 'images/linkedin-icon.svg';
 import { ReactComponent as GithubIcon } from 'images/github-icon.svg';
 
-import './card.css';
+import './styles/card.css';
 import { Link } from 'react-router-dom';
 
 const TeamCard = props => {

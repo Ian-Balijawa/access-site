@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
-import Header from 'components/headers/light.js';
-import Pricing from 'components/pricing/TwoPlansWithDurationSwitcher.js';
-import Testimonial from 'components/testimonials/ThreeColumnWithProfileImage.js';
-import FAQ from 'components/faqs/SingleCol.js';
+import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
+import Header from 'components/Header/light.js';
+import Testimonial from 'components/Testimonial/ThreeColumnWithProfileImage.js';
+import FAQ from 'components/Faqs/SingleCol.js';
 
 export default () => {
 	useEffect(() => {
@@ -14,7 +13,6 @@ export default () => {
 	return (
 		<AnimationRevealPage>
 			<Header hiddenLink={'pricing'} />
-			<Pricing />
 			<Testimonial heading='Our Paying Customers' />
 			<FAQ />
 		</AnimationRevealPage>

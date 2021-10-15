@@ -1,9 +1,9 @@
 import React from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
-import Header from 'components/headers/light.js';
-import Features from 'components/features/ThreeColSimple.js';
-import TeamCardGrid from 'components/cards/ProfileThreeColGrid.js';
+import Header from 'components/Header/light.js';
+import Features from 'components/Features/ThreeColSimple.js';
+import TeamCardGrid from 'components/cards/TeamContainer.js';
 
 import SupportIconImage from 'images/support-icon.svg';
 import ShieldIconImage from 'images/shield-icon.svg';

@@ -1,11 +1,11 @@
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
-import Hero from 'components/heros/BackgroundAsImage';
-import Features from 'components/features/ThreeColWithSideImage.js';
-import MainFeature from 'components/features/TwoColWithButton.js';
-import MainFeature2 from 'components/features/TwoColWithTwoHorizontalFeaturesAndButton.js';
-import FeatureWithSteps from 'components/features/TwoColWithSteps.js';
+import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
+import Hero from 'components/Hero/BackgroundAsImage';
+import Features from 'components/Features/ThreeColWithSideImage.js';
+import MainFeature from 'components/Features/TwoColWithButton.js';
+import MainFeature2 from 'components/Features/TwoColWithTwoHorizontalFeaturesAndButton.js';
+import FeatureWithSteps from 'components/Features/TwoColWithSteps.js';
 import heroScreenshotImageSrc from 'images/hero-screenshot-1.png';
 import macHeroScreenshotImageSrc from 'images/hero-screenshot-2.png';
 import prototypeIllustrationImageSrc from 'images/prototype-illustration.svg';

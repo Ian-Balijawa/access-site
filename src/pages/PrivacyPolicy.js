@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro'; //eslint-disable-line
-import Header from 'components/headers/light.js';
+import Header from 'components/Header/light.js';
 import { SectionHeading } from 'components/misc/Headings';
 
 const HeadingRow = tw.div`flex`;

@@ -1,7 +1,7 @@
-import FAQ from 'components/faqs/SingleCol.js';
+import FAQ from 'components/Faqs/SingleCol.js';
 import tw from 'twin.macro';
-import Header from 'components/headers/light.js';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import Header from 'components/Header/light.js';
+import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import { useEffect } from 'react';
 
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;

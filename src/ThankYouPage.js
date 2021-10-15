@@ -1,9 +1,9 @@
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import GitHubButton from 'react-github-btn';
 
-import { LogoLink } from 'components/headers/light.js';
+import { LogoLink } from 'components/Header/light.js';
 import { SectionHeading as HeadingBase } from 'components/misc/Headings';
 import { SectionDescription as DescriptionBase } from 'components/misc/Typography';
 
