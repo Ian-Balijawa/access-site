@@ -1,0 +1,174 @@
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem auto;
+}
+
+.header-container input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 3px 10px;
+  outline: none;
+}
+
+.header-container input:hover {
+  border: 1px solid #00008f;
+}
+
+.header-container .btn.currency, .header-container .search-key {
+  background: #000059;
+  color: #fff;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: small;
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+.header-container .btn.currency:hover, .header-container .search-key:hover {
+  background: #2626ff;
+  -webkit-transition: background ease .3s;
+  transition: background ease .3s;
+}
+
+@media (max-width: 1000px) {
+  .header-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-container .btn.currency {
+    margin-top: 1rem;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.container .card {
+  width: 15rem;
+  height: 20rem;
+  border: none;
+  -webkit-box-shadow: 0px 0px 1px 1px;
+          box-shadow: 0px 0px 1px 1px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.container .card:hover {
+  background: #dddddd;
+}
+
+.container .card svg {
+  width: 2rem;
+  height: 1.5rem;
+  margin: 5px;
+  color: blue;
+}
+
+.container .card .icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .card .image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-image: url("../../../images/mac-school-system.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.container .card .name {
+  font-size: larger;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.container .card .description {
+  margin: 0 1rem;
+}
+
+.container .card .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 3px;
+}
+
+.container .card .btns .btn {
+  padding: 5px;
+  color: #fff;
+  outline: none;
+}
+
+.container .card .btns .price {
+  border-radius: 5px;
+  font-size: small;
+  color: black;
+  font-weight: bold;
+  cursor: default;
+}
+
+.container .card .btns .download-svg {
+  background: #000059;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .btns .download-svg svg {
+  color: white;
+}
+
+.container .card .btns .download-svg:hover {
+  background: #0202c9;
+  -webkit-transition: background ease .3s;
+  transition: background ease .3s;
+}
+
+.container .card .btns .download-svg:active svg {
+  z-index: -1;
+  color: black;
+}
+/*# sourceMappingURL=product.css.map */

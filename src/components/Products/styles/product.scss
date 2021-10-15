@@ -1,0 +1,144 @@
+
+$mobile: 1000px;
+
+@mixin mobile {
+    @media (max-width:#{$mobile}) {
+        @content
+    }
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    justify-content: space-around;
+    margin: 2rem auto;
+
+        input{
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 3px 10px;
+            outline: none;
+
+            &:hover{
+                border: 1px solid rgb(0, 0, 143);
+            }
+        }
+
+
+    .btn.currency, .search-key {
+        background: rgb(0, 0, 89);
+        color: #fff;
+        border-radius: 4px;
+        width: fit-content;
+        font-size: small;
+        padding: 5px;
+        margin-left: 1rem;
+
+        &:hover{
+            background: lighten(rgb(0, 0, 89),40%);
+            transition: background ease .3s;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn.currency{
+            margin-top: 1rem;
+        }
+    }
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+
+    .card{
+        width: 15rem;
+        height: 20rem;
+        border: none;
+        box-shadow: 0px 0px 1px 1px;
+        background-color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            background: lighten($color: rgb(119, 119, 119), $amount: 40);
+        }
+
+        svg{
+            width: 2rem;
+            height: 1.5rem;
+            margin: 5px;
+            color: blue;
+        }
+        .icons{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .image{
+            align-self: center;
+            background-image: 
+            url("../../../images/mac-school-system.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .name{
+            font-size: larger;
+            margin: 1rem;
+            font-weight: bold;
+        }
+        .description{
+            margin:0 1rem;
+        }
+
+       
+        .btns {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 3px;
+
+            .btn{
+                padding: 5px;
+                color: #fff;
+                outline: none;
+
+            }
+            .price {
+                border-radius: 5px;
+                font-size: small;
+                color: black;
+                font-weight: bold;
+                cursor: default;
+            }
+
+            .download-svg {
+                background: rgb(0, 0, 89);
+                display: flex;
+                border-radius: 4px;
+                align-items: center;
+                svg {
+                    color:white;
+                }
+
+                &:hover{
+                    background:rgb(2, 2, 201);
+                    transition: background ease .3s;
+                }
+                &:active{
+                    svg{
+                        z-index: -1;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

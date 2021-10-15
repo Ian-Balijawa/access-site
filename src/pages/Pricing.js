@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
 import Header from 'components/Header/light.js';
-import Testimonial from 'components/Testimonial/ThreeColumnWithProfileImage.js';
 import FAQ from 'components/Faqs/SingleCol.js';
+import Product from 'components/Products/Product';
 
 export default () => {
 	useEffect(() => {
@@ -13,7 +13,7 @@ export default () => {
 	return (
 		<AnimationRevealPage>
 			<Header hiddenLink='download' />
-			<Testimonial heading='Our Paying Customers' />
+			<Product />
 			<FAQ />
 		</AnimationRevealPage>
 	);
