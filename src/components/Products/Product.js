@@ -3,10 +3,10 @@ import systems from '../../fixtures/products.js';
 import { useState } from 'react';
 
 const Product = () => {
-	const [toggleCurrency, setToggleCurrency] = useState(false);
+	const [toggleCurrency, setToggleCurrency] = useState(true);
 	const [searchTerm, setSearchTerm] = useState('');
 
-	let currency = toggleCurrency ? 'UGX' : 'USD';
+	let currency = toggleCurrency ? 'USD' : 'UGX';
 	let rateFactor = currency === 'UGX' ? 1 : 3540;
 
 	let reactElementkey = 0;
@@ -44,7 +44,7 @@ const Product = () => {
 						setToggleCurrency(toggleCurrency => !toggleCurrency)
 					}
 				>
-					switch to {currency}
+					switch to {toggleCurrency ? 'UGX' : 'USD'}
 				</button>
 			</div>
 			<div className='product-container'>
