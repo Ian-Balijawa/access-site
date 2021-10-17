@@ -7,7 +7,7 @@ const Product = () => {
 	const [searchTerm, setSearchTerm] = useState('');
 
 	let currency = toggleCurrency ? 'USD' : 'UGX';
-	let rateFactor = currency === 'UGX' ? 1 : 3540;
+	let rateFactor = currency === 'UGX' ? 1 : 3580;
 
 	let reactElementkey = 0;
 
