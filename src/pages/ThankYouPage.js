@@ -1,4 +1,3 @@
- from '.js';
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import GitHubButton from 'react-github-btn';
@@ -26,6 +25,7 @@ const Description = tw(
 	DescriptionBase
 )`mt-4 text-center lg:text-base text-gray-700 max-w-lg mx-auto lg:mx-0`;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 	/*
 	 * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
@@ -43,73 +43,70 @@ export default () => {
 	}, []);
 
 	return (
-		<AnimationRevealPage disabled>
-			<Container tw='-mx-8 -mt-8 pt-8 px-8'>
-				<Content2Xl>
-					<NavRow>
-						<LogoLink href='/'>
-							<img src={logo} alt='company brand' />
-							accessadvancedsystems
-						</LogoLink>
-						<div tw='flex flex-col lg:flex-row items-center'>
-							<NavLink
-								target='_blank'
-								href='https://twitter.com/ianbalijawa'
-							>
-								Twitter
-							</NavLink>
-							<NavLink
-								target='_blank'
-								href='https://github.com/Ian-Balijawa'
-							>
-								Who Am I ?
-							</NavLink>
-							<PrimaryNavLink
-								target='_blank'
-								// href='https://gum.co/QaruQ'  TODO
-							>
-								Download Now
-							</PrimaryNavLink>
-						</div>
-					</NavRow>
-					<HeroRow>
-						<Heading>Thank You!</Heading>
-						<Description tw='mt-12'>
-							Your Download Will Begin Shortly. If it does not,{' '}
-							<NavLink href={downloadUrl} download>
-								click this link
-							</NavLink>
-							.
-						</Description>
-						<div tw='mt-12 text-center'>
-							I am working on web applications and websites
-							similar to accessadvancedsystems. We at
-							accessadvanced are working tirelessly{' '}
-							<span tw='font-bold'>on more systems</span> and a
-							much{' '}
-							<span tw='font-bold'>better user experience.</span>.
-						</div>
-						<div tw='mt-12 text-center'>
-							If you liked accessadvancedsystems website and would
-							like to get updates on the apps and systems We're
-							working on among other things, do{' '}
-							<span tw='font-bold'>follow</span> me on GitHub.
-							<div tw='mt-12 flex flex-col items-center'>
-								<div tw='mt-8'>
-									<GitHubButton
-										href='https://github.com/ianbalijawa'
-										data-size='large'
-										data-show-count='true'
-										aria-label='Follow @ianbalijawa on GitHub'
-									>
-										Follow @ianbalijawa
-									</GitHubButton>
-								</div>
+		<Container tw='-mx-8 -mt-8 pt-8 px-8'>
+			<Content2Xl>
+				<NavRow>
+					<LogoLink href='/'>
+						<img src={logo} alt='company brand' />
+						accessadvancedsystems
+					</LogoLink>
+					<div tw='flex flex-col lg:flex-row items-center'>
+						<NavLink
+							target='_blank'
+							href='https://twitter.com/ianbalijawa'
+						>
+							Twitter
+						</NavLink>
+						<NavLink
+							target='_blank'
+							href='https://github.com/Ian-Balijawa'
+						>
+							Who Am I ?
+						</NavLink>
+						<PrimaryNavLink
+							target='_blank'
+							// href='https://gum.co/QaruQ'  TODO
+						>
+							Download Now
+						</PrimaryNavLink>
+					</div>
+				</NavRow>
+				<HeroRow>
+					<Heading>Thank You!</Heading>
+					<Description tw='mt-12'>
+						Your Download Will Begin Shortly. If it does not,{' '}
+						<NavLink href={downloadUrl} download>
+							click this link
+						</NavLink>
+						.
+					</Description>
+					<div tw='mt-12 text-center'>
+						I am working on web applications and websites similar to
+						accessadvancedsystems. We at accessadvanced are working
+						tirelessly <span tw='font-bold'>on more systems</span>{' '}
+						and a much{' '}
+						<span tw='font-bold'>better user experience.</span>.
+					</div>
+					<div tw='mt-12 text-center'>
+						If you liked accessadvancedsystems website and would
+						like to get updates on the apps and systems We're
+						working on among other things, do{' '}
+						<span tw='font-bold'>follow</span> me on GitHub.
+						<div tw='mt-12 flex flex-col items-center'>
+							<div tw='mt-8'>
+								<GitHubButton
+									href='https://github.com/ianbalijawa'
+									data-size='large'
+									data-show-count='true'
+									aria-label='Follow @ianbalijawa on GitHub'
+								>
+									Follow @ianbalijawa
+								</GitHubButton>
 							</div>
 						</div>
-					</HeroRow>
-				</Content2Xl>
-			</Container>
-		
+					</div>
+				</HeroRow>
+			</Content2Xl>
+		</Container>
 	);
 };
