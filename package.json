@@ -1,12 +1,9 @@
 {
-	"name": "custom-react-ui-component-library",
+	"name": "accessadvancedsystems",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
 		"@owaiswiz/use-in-view": "^1.0.16",
-		"@testing-library/jest-dom": "^5.11.10",
-		"@testing-library/react": "^11.2.6",
-		"@testing-library/user-event": "^13.1.5",
 		"feather-icons": "^4.28.0",
 		"framer-motion": "^4.1.5",
 		"react": "^17.0.2",
@@ -22,6 +19,11 @@
 		"styled-components": "^5.2.3",
 		"tailwindcss": "^2.1.1",
 		"twin.macro": "^2.3.3"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.11.10",
+		"@testing-library/react": "^11.2.6",
+		"@testing-library/user-event": "^13.1.5"
 	},
 	"scripts": {
 		"start": "react-scripts start",

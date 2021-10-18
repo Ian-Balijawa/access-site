@@ -22,19 +22,19 @@ export default () => {
 						imageSrc: SupportIconImage,
 						title: '24/7 Support',
 						description:
-							'Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport',
+							'Always available incase of any system inquiry. Communication to be made through the contacts provided, special office line and social media links',
 					},
 					{
 						imageSrc: ShieldIconImage,
 						title: 'Strong Teams',
 						description:
-							'Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport',
+							'We have trust in our team do to the research and strong survey we carry to develop the systems. We work hand in hand to make sure we have the systems that match the clients busisness',
 					},
 					{
 						imageSrc: CustomerLoveIconImage,
 						title: 'Customer Satisfaction',
 						description:
-							'Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport',
+							"Customers will always say anything they want to be added to their we'll add their requested features. We customize the system basing on the business operation",
 					},
 				]}
 				linkText=''

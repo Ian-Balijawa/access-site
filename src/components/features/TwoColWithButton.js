@@ -1,15 +1,11 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
 import {
 	SectionHeading,
 	Subheading as SubheadingBase,
 } from 'components/misc/Headings.js';
-import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 import TeamIllustrationSrc from 'images/team-illustration-2.svg';
 import { ReactComponent as SvgDotPattern } from 'images/dot-pattern.svg';
-
-import * as ROUTES from '../../constants/routes';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -40,11 +36,6 @@ const Heading = tw(
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-const PrimaryButton = styled(PrimaryButtonBase)(props => [
-	tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
-	props.buttonRounded && tw`rounded-full`,
-]);
-
 export default ({
 	subheading = 'Our Expertise',
 	heading = (
@@ -54,10 +45,7 @@ export default ({
 		</>
 	),
 	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-	primaryButtonText = 'Learn More',
-	primaryButtonUrl = ROUTES.ABOUT_US,
 	imageSrc = TeamIllustrationSrc,
-	buttonRounded = true,
 	imageRounded = true,
 	imageBorder = false,
 	imageShadow = false,
@@ -90,13 +78,6 @@ export default ({
 						<Subheading>{subheading}</Subheading>
 						<Heading>{heading}</Heading>
 						<Description>{description}</Description>
-						<PrimaryButton
-							buttonRounded={buttonRounded}
-							as='a'
-							href={primaryButtonUrl}
-						>
-							{primaryButtonText}
-						</PrimaryButton>
 					</TextContent>
 				</TextColumn>
 			</TwoColumn>

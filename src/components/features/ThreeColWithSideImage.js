@@ -65,7 +65,7 @@ export default ({
 	cards = null,
 	heading = 'Amazing Features',
 	subheading = 'Features',
-	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	description = '',
 }) => {
 	/*
 	 * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -80,13 +80,32 @@ export default ({
 			imageSrc: ShieldIconImage,
 			title: 'Secure',
 			description:
-				'We strictly only deal with vendors that provide top notch security.',
+				'Our systems are offline, therefore very secure incase of backups and data safety, we create cloud space for a client during system installation and the client has full control of the cloud space',
 		},
-		{ imageSrc: SupportIconImage, title: '24/7 Support' },
+		{
+			imageSrc: SupportIconImage,
+			title: '24/7 Support',
+			description:
+				'Always available incase of any system inquiry. Communication to be made through the contacts provided, special office line and social media links',
+		},
 		{ imageSrc: CustomizeIconImage, title: 'Customizable' },
-		{ imageSrc: ReliableIconImage, title: 'Reliable' },
-		{ imageSrc: FastIconImage, title: 'Fast' },
-		{ imageSrc: SimpleIconImage, title: 'Easy' },
+		{
+			imageSrc: ReliableIconImage,
+			title: 'Reliable',
+			description:
+				'The systems are built specifically to meet the customers business model. We engage customers during the development process to come up with what exactly the customer wants',
+		},
+		{
+			imageSrc: FastIconImage,
+			title: 'Fast',
+			description: 'These systmes are rapidy fast to execute',
+		},
+		{
+			imageSrc: SimpleIconImage,
+			title: 'Easy',
+			description:
+				'The systems are very user friendly. This is based on how fast people pick up during the system training. We have a youtube channel where videos on particular systems are uploaded for views. Besides, all our systems are released with a user manual',
+		},
 	];
 
 	if (!cards) cards = defaultCards;

@@ -48,7 +48,7 @@ export default ({
 			<wbr /> with us.
 		</>
 	),
-	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	description = 'We are available 24/7 incase of any inquiry, please feel free to contact. Incase of a busy line, please leave us a message below.',
 	submitButtonText = 'Send',
 	formAction = '#',
 	formMethod = 'get',

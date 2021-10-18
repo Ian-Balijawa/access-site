@@ -56,7 +56,7 @@ export default ({
 	cards = null,
 	heading = 'Our Offices',
 	subheading = 'Locations',
-	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	description = 'We currently have one office, we have plans to get offices in every city.',
 }) => {
 	/*
 	 * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:

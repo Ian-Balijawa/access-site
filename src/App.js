@@ -18,7 +18,7 @@ import Pricing from 'pages/Pricing.js';
 import Notfound from 'pages/404';
 import Faqs from 'pages/Faqs';
 
-import ThankYouPage from 'ThankYouPage.js';
+import ThankYouPage from 'pages/ThankYouPage.js';
 
 import {
 	BrowserRouter as Router,

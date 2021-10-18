@@ -61,7 +61,6 @@ export default () => {
 		<NavLinks key={1}>
 			<NavLink href={ROUTES.ABOUT_US}>About</NavLink>
 			<NavLink href={ROUTES.PRODUCTS}>Systems</NavLink>
-			<NavLink href={ROUTES.PRODUCTS}>Download</NavLink>
 		</NavLinks>,
 		<NavLinks key={3}>
 			<PrimaryLink href={ROUTES.CONTACT_US}>Contact Us</PrimaryLink>
@@ -113,7 +112,7 @@ export default () => {
 					</LeftColumn>
 					<RightColumn>
 						<video
-							src='/videos/showcase.mp4'
+							src='/videos/advert.mp4'
 							autoPlay
 							loop
 							muted

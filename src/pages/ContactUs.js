@@ -27,12 +27,15 @@ export default () => {
 						description: (
 							<>
 								<Address>
-									<AddressLine>Kyebndo</AddressLine>
 									<AddressLine>
-										Butannaziba, off Erisa road
+										Kyebndo off Gayaza Main Road along Erisa
+										Road [Erisa RingRoad],{' '}
+									</AddressLine>
+									<AddressLine>
+										@ Butannaziba Business center
 									</AddressLine>
 								</Address>
-								<Email>ianbalijawa16@gmail.com</Email>
+								<Email>accessadvancedsystems@gmail.com</Email>
 								<Phone>+25676008970</Phone>
 							</>
 						),
