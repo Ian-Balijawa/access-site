@@ -13,6 +13,7 @@ import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sig
 import Faqs from './Faqs';
 import { useEffect } from 'react';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 	const HighlightedText = tw.span`text-primary-500`;

@@ -9,6 +9,7 @@ import ShieldIconImage from 'images/shield-icon.svg';
 import CustomerLoveIconImage from 'images/simple-icon.svg';
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 	return (
 		<AnimationRevealPage>

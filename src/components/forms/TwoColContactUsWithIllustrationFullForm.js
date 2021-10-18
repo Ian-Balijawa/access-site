@@ -40,6 +40,7 @@ const Textarea = styled(Input).attrs({ as: 'textarea' })`
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({
 	subheading = 'Contact Us',
 	heading = (
