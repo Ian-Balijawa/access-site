@@ -1,4 +1,4 @@
-import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
+import AnimationRevealPage from '../Helpers/AnimationRevealPage';
 import tw from 'twin.macro';
 import Header from 'components/Header/light.js';
 import Features from 'components/Features/ThreeColSimple.js';
