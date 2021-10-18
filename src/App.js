@@ -4,21 +4,21 @@ import 'styles/globalStyles.css';
 /**
  *	This is the entry point component of this project.
  *  Use AnimationRevealPage as a wrapper component for your pages if you are building a custom one yourself
- *	import AnimationRevealPage from "../Helpers/AnimationRevealPage.js";
+ *	import AnimationRevealPage from "../Helpers/AnimationRevealPage";
  *	Hero section is the top most section on the page. It contains the header as well.
  *	So you dont need to import headers separately
  */
 
-import HOME from 'pages/Home.js';
-import AboutUs from 'pages/AboutUs.js';
+import HOME from 'pages/Home';
+import AboutUs from 'pages/AboutUs';
 import ContactUs from 'pages/ContactUs';
-import TermsOfService from 'pages/TermsOfService.js';
-import PrivacyPolicy from 'pages/PrivacyPolicy.js';
-import Pricing from 'pages/Pricing.js';
+import TermsOfService from 'pages/TermsOfService';
+import PrivacyPolicy from 'pages/PrivacyPolicy';
+import Pricing from 'pages/Pricing';
 import Notfound from 'pages/404';
 import Faqs from 'pages/Faqs';
 
-import ThankYouPage from 'pages/ThankYouPage.js';
+import ThankYouPage from 'pages/ThankYouPage';
 
 import {
 	BrowserRouter as Router,

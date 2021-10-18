@@ -6,8 +6,8 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 import {
 	SectionHeading,
 	Subheading as SubheadingBase,
-} from 'components/misc/Headings.js';
-import { SectionDescription } from 'components/misc/Typography.js';
+} from 'components/misc/Headings';
+import { SectionDescription } from 'components/misc/Typography';
 
 import { ReactComponent as SvgDecoratorBlob3 } from 'images/svg-decorator-blob-3.svg';
 
