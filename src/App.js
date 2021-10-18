@@ -4,7 +4,7 @@ import 'styles/globalStyles.css';
 /**
  *	This is the entry point component of this project.
  *  Use AnimationRevealPage as a wrapper component for your pages if you are building a custom one yourself
- *	import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+ *	import AnimationRevealPage from "../Helpers/AnimationRevealPage.js";
  *	Hero section is the top most section on the page. It contains the header as well.
  *	So you dont need to import headers separately
  */

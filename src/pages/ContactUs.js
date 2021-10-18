@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
+import AnimationRevealPage from '../Helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
 import Header from 'components/Header/light.js';
 import ContactUsForm from 'components/forms/TwoColContactUsWithIllustrationFullForm.js';

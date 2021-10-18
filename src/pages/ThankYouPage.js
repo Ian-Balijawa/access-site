@@ -1,4 +1,4 @@
-import AnimationRevealPage from 'Helpers/AnimationRevealPage.js';
+import AnimationRevealPage from '../Helpers/AnimationRevealPage.js';
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import GitHubButton from 'react-github-btn';
