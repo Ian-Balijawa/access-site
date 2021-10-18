@@ -4,7 +4,7 @@ import 'styles/globalStyles.css';
 /**
  *	This is the entry point component of this project.
  *  Use AnimationRevealPage as a wrapper component for your pages if you are building a custom one yourself
- *	import AnimationRevealPage from "../Helpers/AnimationRevealPage";
+ *	 from "";
  *	Hero section is the top most section on the page. It contains the header as well.
  *	So you dont need to import headers separately
  */
@@ -30,7 +30,7 @@ import * as ROUTES from './constants/routes';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
-	// return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
+	// return <AnimationRevealPage disabled>xxxxxxxxxx;
 
 	return (
 		<Router>

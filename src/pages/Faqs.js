@@ -1,7 +1,7 @@
 import FAQ from 'components/Faqs/SingleCol.js';
 import tw from 'twin.macro';
 import Header from 'components/Header/light.js';
-import AnimationRevealPage from '../Helpers/AnimationRevealPage.js';
+ from '.js';
 import { useEffect } from 'react';
 
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -17,7 +17,7 @@ const Faqs = props => {
 
 	return (
 		<>
-			<AnimationRevealPage>
+			
 				{!(header === 'false') && <Header />}
 				<FAQ
 					subheading={<Subheading>FAQS</Subheading>}
@@ -60,7 +60,7 @@ const Faqs = props => {
 						},
 					]}
 				/>
-			</AnimationRevealPage>
+			
 		</>
 	);
 };

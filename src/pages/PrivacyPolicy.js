@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import AnimationRevealPage from '../Helpers/AnimationRevealPage.js';
+ from '.js';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';
@@ -40,7 +40,7 @@ export default ({ headingText = 'Privacy Policy' }) => {
 		return () => null;
 	}, []);
 	return (
-		<AnimationRevealPage>
+		
 			<Header />
 			<Container>
 				<ContentWithPaddingXl>
@@ -572,6 +572,6 @@ export default ({ headingText = 'Privacy Policy' }) => {
 					</Text>
 				</ContentWithPaddingXl>
 			</Container>
-		</AnimationRevealPage>
+		
 	);
 };

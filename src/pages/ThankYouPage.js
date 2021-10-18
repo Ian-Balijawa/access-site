@@ -1,4 +1,4 @@
-import AnimationRevealPage from '../Helpers/AnimationRevealPage.js';
+ from '.js';
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import GitHubButton from 'react-github-btn';
@@ -110,6 +110,6 @@ export default () => {
 					</HeroRow>
 				</Content2Xl>
 			</Container>
-		</AnimationRevealPage>
+		
 	);
 };

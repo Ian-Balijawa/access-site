@@ -1,4 +1,3 @@
-import AnimationRevealPage from '../Helpers/AnimationRevealPage';
 import tw from 'twin.macro';
 import Header from 'components/Header/light.js';
 import Features from 'components/Features/ThreeColSimple.js';
@@ -12,7 +11,7 @@ const Subheading = tw.span`uppercase tracking-wider text-sm`;
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 	return (
-		<AnimationRevealPage>
+		<>
 			<Header hiddenLink={'about'} />
 			<Features
 				subheading={<Subheading>Our Values</Subheading>}
@@ -41,6 +40,6 @@ export default () => {
 				linkText=''
 			/>
 			<TeamCardGrid subheading={<Subheading>Our Team</Subheading>} />
-		</AnimationRevealPage>
+		</>
 	);
 };
