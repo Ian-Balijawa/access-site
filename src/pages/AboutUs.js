@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 import Header from '../components/Header/light';
-import FAQ from '../components/Faqs/SingleCol';
+// import FAQ from '../components/Faqs/SingleCol';
 import TeamCardGrid from '../components/cards/TeamContainer';
 import Features from '../components/Features/ThreeColWithSideImage';
 
@@ -41,7 +41,7 @@ export default () => {
 				linkText=''
 			/>
 			<TeamCardGrid subheading={<Subheading>Our Team</Subheading>} />
-			<FAQ />
+			{/* <FAQ /> */}
 		</>
 	);
 };

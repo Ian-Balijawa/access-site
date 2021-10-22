@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import tw from 'twin.macro';
 import Header from '../components/Header/light';
-import ContactUsForm from '../components/forms/TwoColContactUsWithIllustrationFullForm.js';
-import ContactDetails from '../components/cards/ContactDetails.js';
+import ContactUsForm from '../components/forms/TwoColContactUsWithIllustrationFullForm';
+import ContactDetails from '../components/cards/ContactDetails';
 
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
