@@ -1,4 +1,4 @@
-// import FAQ from '../components/Faqs/SingleCol';
+import FAQ from '../components/Faqs/SingleCol';
 import tw from 'twin.macro';
 import Header from '../components/Header/light';
 import { useEffect } from 'react';
@@ -17,7 +17,7 @@ const Faqs = props => {
 	return (
 		<>
 			{!(header === 'false') && <Header />}
-			{/* <FAQ
+			<FAQ
 				subheading={<Subheading>FAQS</Subheading>}
 				heading={
 					<>
@@ -56,7 +56,7 @@ const Faqs = props => {
 						answer: "The list doesn't stop growing for people are finding need for having these systems at their businesses",
 					},
 				]}
-			/> */}
+			/>
 		</>
 	);
 };
