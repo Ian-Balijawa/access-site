@@ -107,7 +107,7 @@ export default () => {
 									height: '4rem',
 								}}
 							>
-								Download and Get Started
+								Get Started
 							</PrimaryAction>
 						</Link>
 					</LeftColumn>
@@ -118,10 +118,11 @@ export default () => {
 							loop
 							muted
 							style={{
-								maxWidth: '100%',
+								maxWidth: '95%',
 								alignSelf: 'center',
 								height: 'auto',
 								borderRadius: '5px',
+								marginLeft: '15px',
 								boxShadow: '0px 0px 2px 4px #5668878c',
 							}}
 						/>

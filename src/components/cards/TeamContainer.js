@@ -20,7 +20,7 @@ const Description = tw(SectionDescription)`mx-auto text-center`;
 export default ({
 	heading = 'Meet These Fine Folks.',
 	subheading = 'Our Team',
-	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	description = 'We have a very strong team that has altogether helped to build the company and its systems, all perfoming unique skills',
 }) => {
 	return (
 		<>

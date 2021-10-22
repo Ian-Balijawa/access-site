@@ -21,7 +21,7 @@ const Product = () => {
 
 		if (filtered.length) {
 			setSystems(filtered);
-		}
+		} else setSystems(products);
 	};
 
 	return (

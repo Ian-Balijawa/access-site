@@ -18,16 +18,16 @@ const team = [
 		position: 'Systems Manager',
 	},
 	{
-		imageSrc: '/images/juliet.jpg',
-		firstName: 'Apio',
-		lastName: 'Juliet',
-		position: 'Secretary',
-	},
-	{
 		imageSrc: '/images/edwin.jpg',
 		firstName: 'Asha',
 		lastName: 'Edwin',
 		position: 'Sales Manager',
+	},
+	{
+		imageSrc: '/images/juliet.jpg',
+		firstName: 'Apio',
+		lastName: 'Juliet',
+		position: 'Secretary',
 	},
 	{
 		imageSrc: '/images/samson.jpg',
