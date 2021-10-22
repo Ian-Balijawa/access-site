@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
+import { PrimaryButton as PrimaryButtonBase } from '../../components/misc/Buttons';
 
 import * as ROUTES from '../../constants/routes';
 

@@ -8,7 +8,7 @@ import {
 	SectionHeading,
 	Subheading as SubheadingBase,
 } from 'components/misc/Headings';
-import { SectionDescription } from 'components/misc/Typography';
+import { SectionDescription } from '../../components/misc/Typography';
 
 import TeamCard from './Team';
 
