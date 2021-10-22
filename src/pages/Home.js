@@ -1,10 +1,10 @@
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import Hero from '../components/Hero/BackgroundAsImage';
-import Features from '../components/Features/ThreeColWithSideImage.js';
-import MainFeature from '../components/Features/TwoColWithButton.js';
-import MainFeature2 from '../components/Features/TwoColWithTwoHorizontalFeaturesAndButton.js';
-import FeatureWithSteps from '../components/Features/TwoColWithSteps.js';
+// import Features from '../components/Features/ThreeColWithSideImage';
+import MainFeature from '../components/Features/TwoColWithButton';
+import MainFeature2 from '../components/Features/TwoColWithTwoHorizontalFeaturesAndButton';
+import FeatureWithSteps from '../components/Features/TwoColWithSteps';
 import heroScreenshotImageSrc from '../images/team.jpg';
 import macHeroScreenshotImageSrc from '../images/mac-school-system.png';
 import prototypeIllustrationImageSrc from '../images/prototype-illustration.svg';
@@ -26,7 +26,7 @@ export default () => {
 	return (
 		<>
 			<Hero roundedHeaderButton={false} />
-			<Features
+			{/* <Features
 				subheading={<Subheading>Features</Subheading>}
 				heading={
 					<>
@@ -34,7 +34,7 @@ export default () => {
 						<HighlightedText>clients</HighlightedText>
 					</>
 				}
-			/>
+			/> */}
 			<MainFeature
 				subheading={<Subheading>Quality Work</Subheading>}
 				imageSrc={heroScreenshotImageSrc}
