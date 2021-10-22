@@ -1,4 +1,4 @@
-export default [
+const products = [
 	{
 		name: 'School Management system',
 		description:
@@ -6,177 +6,95 @@ export default [
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Pharmacy Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Restaurant Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Hardware Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'WholeSale Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Apartment Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Rentals Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'LocalCouncil Managment system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Supermarket Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Retail Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Accouting Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Saving and Credit system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Finance Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'Library Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
+		name: 'NGO Management systems',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
-		price: 2000000,
-	},
-	{
-		name: 'School Management system',
+		name: 'Clinic Management system',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure.',
 		price: 2000000,
 	},
 ];
+
+export default products;

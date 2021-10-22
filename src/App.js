@@ -9,16 +9,16 @@ import 'styles/globalStyles.css';
  *	So you dont need to import headers separately
  */
 
-import HOME from 'pages/Home';
-import AboutUs from 'pages/AboutUs';
-import ContactUs from 'pages/ContactUs';
-import TermsOfService from 'pages/TermsOfService';
-import PrivacyPolicy from 'pages/PrivacyPolicy';
-import Pricing from 'pages/Pricing';
-import Notfound from 'pages/404';
-import Faqs from 'pages/Faqs';
+import HOME from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Pricing from './pages/Pricing';
+import Notfound from './pages/404';
+import Faqs from './pages/Faqs';
 
-import ThankYouPage from 'pages/ThankYouPage';
+import ThankYouPage from './pages/ThankYouPage';
 
 import {
 	BrowserRouter as Router,

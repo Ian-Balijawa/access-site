@@ -1,13 +1,14 @@
+import { useEffect } from 'react';
+
 import { Container, Content2Xl } from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import GitHubButton from 'react-github-btn';
 
-import { LogoLink } from 'components/Header/light.js';
-import { SectionHeading as HeadingBase } from 'components/misc/Headings';
-import { SectionDescription as DescriptionBase } from 'components/misc/Typography';
+import { LogoLink } from '../components/Header/light';
+import { SectionHeading as HeadingBase } from '../components/misc/Headings';
+import { SectionDescription as DescriptionBase } from '../components/misc/Typography';
 
-import logo from 'images/logo.svg';
-import { useEffect } from 'react';
+import logo from '../images/logo.svg';
 
 /* Hero */
 const Row = tw.div`flex`;

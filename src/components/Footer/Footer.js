@@ -4,10 +4,10 @@ import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 
 import * as ROUTES from '../../constants/routes';
 
-import LogoImage from 'images/logo.svg';
-import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
-import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
-import { ReactComponent as YoutubeIcon } from 'images/youtube-icon.svg';
+import LogoImage from '../../images/logo.svg';
+import { ReactComponent as FacebookIcon } from '../../images/facebook-icon.svg';
+import { ReactComponent as TwitterIcon } from '../../images/twitter-icon.svg';
+import { ReactComponent as YoutubeIcon } from '../../images/youtube-icon.svg';
 import { useState } from 'react';
 
 // const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
@@ -66,6 +66,7 @@ const SocialLink = styled.a`
 	}
 `;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 	const [emailAddress, setEmailAddress] = useState('');
 

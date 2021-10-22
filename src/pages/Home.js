@@ -1,13 +1,13 @@
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
-import Hero from 'components/Hero/BackgroundAsImage';
-import Features from 'components/Features/ThreeColWithSideImage.js';
-import MainFeature from 'components/Features/TwoColWithButton.js';
-import MainFeature2 from 'components/Features/TwoColWithTwoHorizontalFeaturesAndButton.js';
-import FeatureWithSteps from 'components/Features/TwoColWithSteps.js';
-import heroScreenshotImageSrc from 'images/hero-screenshot-1.png';
-import macHeroScreenshotImageSrc from 'images/mac-school-system.png';
-import prototypeIllustrationImageSrc from 'images/prototype-illustration.svg';
+import Hero from '../components/Hero/BackgroundAsImage';
+import Features from '../components/Features/ThreeColWithSideImage.js';
+import MainFeature from '../components/Features/TwoColWithButton.js';
+import MainFeature2 from '../components/Features/TwoColWithTwoHorizontalFeaturesAndButton.js';
+import FeatureWithSteps from '../components/Features/TwoColWithSteps.js';
+import heroScreenshotImageSrc from '../images/team.jpg';
+import macHeroScreenshotImageSrc from '../images/mac-school-system.png';
+import prototypeIllustrationImageSrc from '../images/prototype-illustration.svg';
 import { ReactComponent as BriefcaseIcon } from 'feather-icons/dist/icons/briefcase.svg';
 import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sign.svg';
 import Faqs from './Faqs';

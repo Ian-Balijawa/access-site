@@ -1,9 +1,8 @@
-import React from 'react';
+import Modal from 'react-modal';
+
 import { render } from 'react-dom';
 import App from './App';
-import Footer from 'components/Footer/Footer.js';
-
-import Modal from 'react-modal';
+import Footer from './components/Footer/Footer.js';
 
 Modal.setAppElement('#root');
 

@@ -1,11 +1,12 @@
 import tw from 'twin.macro';
-import Header from 'components/Header/light.js';
-import Features from 'components/Features/ThreeColSimple.js';
-import TeamCardGrid from 'components/cards/TeamContainer.js';
+import Header from '../components/Header/light';
+import FAQ from '../components/Faqs/SingleCol.js';
+import TeamCardGrid from '../components/cards/TeamContainer';
+import Features from '../components/Features/ThreeColWithSideImage.js';
 
-import SupportIconImage from 'images/support-icon.svg';
-import ShieldIconImage from 'images/shield-icon.svg';
-import CustomerLoveIconImage from 'images/simple-icon.svg';
+import SupportIconImage from '../images/support-icon.svg';
+import ShieldIconImage from '../images/shield-icon.svg';
+import CustomerLoveIconImage from '../images/simple-icon.svg';
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -40,6 +41,7 @@ export default () => {
 				linkText=''
 			/>
 			<TeamCardGrid subheading={<Subheading>Our Team</Subheading>} />
+			<FAQ />
 		</>
 	);
 };

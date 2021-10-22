@@ -1,22 +1,26 @@
 import './styles/product.css';
-import systems from '../../fixtures/products.js';
+import products from '../../fixtures/products.js';
 import { useState } from 'react';
 
 const Product = () => {
 	const [toggleCurrency, setToggleCurrency] = useState(true);
 	const [searchTerm, setSearchTerm] = useState('');
+	const [systems, setSystems] = useState(products);
 
 	let currency = toggleCurrency ? 'USD' : 'UGX';
 	let rateFactor = currency === 'UGX' ? 1 : 3580;
 
 	let reactElementkey = 0;
 
-	const handleSearch = term => {
-		let data = [...systems];
-		const filtered = data.filter(system => system.name === term);
-		if (filtered.length > 0) {
-			data = filtered;
-			console.log(data, term);
+	const handleSearch = searchKey => {
+		searchKey = searchKey.toLowerCase();
+		let data = [...products];
+		const filtered = data.filter(
+			product => product.name.split(' ')[0].toLowerCase() === searchKey
+		);
+
+		if (filtered.length) {
+			setSystems(filtered);
 		}
 	};
 
@@ -27,14 +31,31 @@ const Product = () => {
 					<input
 						type='text'
 						value={searchTerm}
-						onChange={e => setSearchTerm(e.target.value)}
-						placeholder='Search Systems'
+						onChange={e => {
+							setSearchTerm(e.target.value);
+							handleSearch(e.target.value);
+						}}
+						placeholder='Search for systems'
+						onKeyUp={() =>
+							document
+								.querySelector('input')
+								.addEventListener('keydown', event => {
+									if (event.key === 'Enter')
+										handleSearch(searchTerm);
+								})
+						}
 					/>
 					<button
 						className='search-btn'
 						onClick={() => handleSearch(searchTerm)}
 					>
 						Search
+					</button>
+					<button
+						className='search-btn'
+						onClick={() => setSystems(products)}
+					>
+						Reload systems
 					</button>
 				</div>
 

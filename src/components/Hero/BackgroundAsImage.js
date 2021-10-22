@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import * as ROUTES from '../../constants/routes';

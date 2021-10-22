@@ -1,18 +1,17 @@
-import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import {
 	SectionHeading,
 	Subheading as SubheadingBase,
-} from 'components/misc/Headings.js';
-import { SectionDescription } from 'components/misc/Typography.js';
-import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
-import { ReactComponent as ArrowRightIcon } from 'images/arrow-right-icon.svg';
-import SupportIconImage from 'images/support-icon.svg';
-import ShieldIconImage from 'images/shield-icon.svg';
-import CustomizeIconImage from 'images/customize-icon.svg';
-import { ReactComponent as SvgDecoratorBlob3 } from 'images/svg-decorator-blob-3.svg';
+} from '../misc/Headings.js';
+import { SectionDescription } from '../misc/Typography.js';
+import { Container, ContentWithPaddingXl } from '../misc/Layouts.js';
+import { ReactComponent as ArrowRightIcon } from '../../images/arrow-right-icon.svg';
+import SupportIconImage from '../../images/support-icon.svg';
+import ShieldIconImage from '../../images/shield-icon.svg';
+import CustomizeIconImage from '../../images/customize-icon.svg';
+import { ReactComponent as SvgDecoratorBlob3 } from '../../images/svg-decorator-blob-3.svg';
 
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
@@ -53,6 +52,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 	${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-40`}
 `;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({
 	cards = [
 		{

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import tw from 'twin.macro';
@@ -6,12 +6,15 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 import {
 	SectionHeading,
 	Subheading as SubheadingBase,
-} from 'components/misc/Headings.js';
-import { SectionDescription } from 'components/misc/Typography.js';
-import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
+} from '../../components/misc/Headings.js';
+import { SectionDescription } from '../../components/misc/Typography.js';
+import {
+	Container,
+	ContentWithPaddingXl,
+} from '../../components/misc/Layouts.js';
 import { ReactComponent as ChevronDownIcon } from 'feather-icons/dist/icons/chevron-down.svg';
-import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-7.svg';
-import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-8.svg';
+import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-blob-7.svg';
+import { ReactComponent as SvgDecoratorBlob2 } from '../../images/svg-decorator-blob-8.svg';
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
 const Heading = tw(SectionHeading)`w-full`;
@@ -41,6 +44,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 	${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-15 transform -translate-x-2/3 text-primary-500`}
 `;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({
 	subheading = 'FAQS',
 	heading = 'You have Questions ?',

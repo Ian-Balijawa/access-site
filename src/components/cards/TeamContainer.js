@@ -1,5 +1,9 @@
+/* eslint-disable import/no-anonymous-default-export */
 import tw from 'twin.macro';
-import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
+import {
+	Container,
+	ContentWithPaddingXl,
+} from '../../components/misc/Layouts.js';
 import {
 	SectionHeading,
 	Subheading as SubheadingBase,

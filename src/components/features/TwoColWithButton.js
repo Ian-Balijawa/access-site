@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import {
 	SectionHeading,
 	Subheading as SubheadingBase,
-} from 'components/misc/Headings.js';
-import TeamIllustrationSrc from 'images/team-illustration-2.svg';
-import { ReactComponent as SvgDotPattern } from 'images/dot-pattern.svg';
+} from '../../components/misc/Headings.js';
+import TeamIllustrationSrc from '../../images/team-illustration-2.svg';
+import { ReactComponent as SvgDotPattern } from '../../images/dot-pattern.svg';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -36,6 +36,7 @@ const Heading = tw(
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({
 	subheading = 'Our Expertise',
 	heading = (

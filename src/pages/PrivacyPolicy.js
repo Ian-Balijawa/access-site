@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
- from '.js';
-import { Container, ContentWithPaddingXl } from 'components/misc/Layouts';
+import { Container, ContentWithPaddingXl } from '../components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro'; //eslint-disable-line
-import Header from 'components/Header/light.js';
-import { SectionHeading } from 'components/misc/Headings';
+import Header from '../components/Header/light';
+import { SectionHeading } from '../components/misc/Headings';
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900 mb-10`;
@@ -33,6 +32,7 @@ const Text = styled.div`
 		}
 	}
 `;
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({ headingText = 'Privacy Policy' }) => {
 	useEffect(() => {
 		document.title = 'Access | Privacy Policy';
@@ -40,7 +40,7 @@ export default ({ headingText = 'Privacy Policy' }) => {
 		return () => null;
 	}, []);
 	return (
-		
+		<>
 			<Header />
 			<Container>
 				<ContentWithPaddingXl>
@@ -572,6 +572,6 @@ export default ({ headingText = 'Privacy Policy' }) => {
 					</Text>
 				</ContentWithPaddingXl>
 			</Container>
-		
+		</>
 	);
 };
