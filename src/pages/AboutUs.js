@@ -1,8 +1,8 @@
 import tw from 'twin.macro';
 import Header from '../components/Header/light';
-import FAQ from '../components/Faqs/SingleCol.js';
+import FAQ from '../components/Faqs/SingleCol';
 import TeamCardGrid from '../components/cards/TeamContainer';
-import Features from '../components/Features/ThreeColWithSideImage.js';
+import Features from '../components/Features/ThreeColWithSideImage';
 
 import SupportIconImage from '../images/support-icon.svg';
 import ShieldIconImage from '../images/shield-icon.svg';
