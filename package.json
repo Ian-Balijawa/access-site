@@ -1,7 +1,7 @@
 {
-	"name": "access-tail",
+	"name": "access-site",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
 	"dependencies": {
 		"@craco/craco": "^6.3.0",
 		"web-vitals": "^1.0.1",
@@ -26,19 +26,6 @@
 		"build": "craco build",
 		"test": "craco test",
 		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		],
-		"overrides": [
-			{
-				"files": [
-					"src/**/*.js"
-				]
-			}
-		]
 	},
 	"browserslist": {
 		"production": [

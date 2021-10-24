@@ -1,7 +1,6 @@
 import tw from 'twin.macro';
-import { css } from 'styled-components/macro'; //eslint-disable-line
 import Hero from '../components/Hero/BackgroundAsImage';
-// import Features from '../components/Features/ThreeColWithSideImage';
+import Features from '../components/Features/ThreeColWithSideImage';
 import MainFeature from '../components/Features/TwoColWithButton';
 import MainFeature2 from '../components/Features/TwoColWithTwoHorizontalFeaturesAndButton';
 import FeatureWithSteps from '../components/Features/TwoColWithSteps';
@@ -13,7 +12,6 @@ import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sig
 import Faqs from './Faqs';
 import { useEffect } from 'react';
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default function Home() {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 	const HighlightedText = tw.span`text-primary-500`;
@@ -26,7 +24,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero roundedHeaderButton={false} />
-			{/* <Features
+			<Features
 				subheading={<Subheading>Features</Subheading>}
 				heading={
 					<>
@@ -34,7 +32,7 @@ export default function Home() {
 						<HighlightedText>clients</HighlightedText>
 					</>
 				}
-			/> */}
+			/>
 			<MainFeature
 				subheading={<Subheading>Quality Work</Subheading>}
 				imageSrc={heroScreenshotImageSrc}
