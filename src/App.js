@@ -1,5 +1,5 @@
 import 'tailwindcss/dist/base.css';
-import 'styles/globalStyles.css';
+// import 'styles/globalStyles.css';
 
 /**
  *	This is the entry point component of this project.
