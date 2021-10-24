@@ -66,8 +66,7 @@ const SocialLink = styled.a`
 	}
 `;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default function Footer () {
+export default function Footer() {
 	const [emailAddress, setEmailAddress] = useState('');
 
 	const handleSubmit = e => {

@@ -9,7 +9,6 @@ const AddressLine = tw.span`block`;
 const Email = tw.span`text-sm mt-6 block text-gray-500`;
 const Phone = tw.span`text-sm mt-0 block text-gray-500`;
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default function ContactUs() {
 	useEffect(() => {
 		document.title = 'accessadvanced | Contact us';
