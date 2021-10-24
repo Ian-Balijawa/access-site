@@ -61,12 +61,12 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({
+export default function ThreeColWithSideImage({
 	cards = null,
 	heading = 'Amazing Features',
 	subheading = 'Features',
 	description = '',
-}) => {
+}) {
 	/*
 	 * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
 	 *  1) imageSrc - the image shown at the top of the card
@@ -142,4 +142,4 @@ export default ({
 			<DecoratorBlob />
 		</Container>
 	);
-};
+}

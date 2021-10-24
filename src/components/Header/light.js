@@ -58,14 +58,14 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
-export default ({
+export default function Light({
 	roundedHeaderButton = false,
 	logoLink,
 	links,
 	className,
 	hiddenLink = null,
 	collapseBreakpointClass = 'lg',
-}) => {
+}) {
 	/*
 	 * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
 	 * This links props should be an array of "NavLinks" components which is exported from this file.
@@ -154,7 +154,7 @@ export default ({
 			</MobileNavLinksContainer>
 		</Header>
 	);
-};
+}
 
 /* The below code is for generating dynamic break points for navbar.
  * Using this you can specify if you want to switch

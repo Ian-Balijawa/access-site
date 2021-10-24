@@ -67,7 +67,7 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 	props.buttonRounded && tw`rounded-full`,
 ]);
 
-export default ({
+export default function TwoColWithTwoHorizontalFeaturesAndButton({
 	subheading = 'Our Expertise',
 	heading = (
 		<>
@@ -89,7 +89,7 @@ export default ({
 	iconRoundedFull = true,
 	iconFilled = true,
 	iconContainerCss = null,
-}) => {
+}) {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
 	/*
@@ -169,4 +169,4 @@ export default ({
 			</TwoColumn>
 		</Container>
 	);
-};
+}

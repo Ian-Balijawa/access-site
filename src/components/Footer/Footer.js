@@ -67,7 +67,7 @@ const SocialLink = styled.a`
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+export default function Footer () {
 	const [emailAddress, setEmailAddress] = useState('');
 
 	const handleSubmit = e => {
@@ -162,4 +162,4 @@ export default () => {
 			</Content>
 		</Container>
 	);
-};
+}

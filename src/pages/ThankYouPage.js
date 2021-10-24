@@ -27,7 +27,7 @@ const Description = tw(
 )`mt-4 text-center lg:text-base text-gray-700 max-w-lg mx-auto lg:mx-0`;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+export default function ThankYouPage() {
 	/*
 	 * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
 	 * Remove this part and the the gtag script inside public/index.html if you dont need google analytics
@@ -110,4 +110,4 @@ export default () => {
 			</Content2Xl>
 		</Container>
 	);
-};
+}

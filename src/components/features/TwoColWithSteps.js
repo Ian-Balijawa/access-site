@@ -43,8 +43,7 @@ const StepText = tw.div`mt-3 md:mt-0 md:ml-6`;
 const StepHeading = tw.h6`leading-none text-xl font-semibold`;
 const StepDescription = tw.p`mt-3 max-w-xs leading-loose text-sm text-gray-600 font-medium`;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default ({
+export default function TwoColWithSteps({
 	subheading = 'Our Expertise',
 	heading = (
 		<>
@@ -60,7 +59,7 @@ export default ({
 	textOnLeft = true,
 	steps = null,
 	decoratorBlobCss = null,
-}) => {
+}) {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
 	const defaultSteps = [
@@ -124,4 +123,4 @@ export default ({
 			</TwoColumn>
 		</Container>
 	);
-};
+}

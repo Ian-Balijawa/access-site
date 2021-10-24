@@ -32,8 +32,7 @@ const Text = styled.div`
 		}
 	}
 `;
-// eslint-disable-next-line import/no-anonymous-default-export
-export default ({ headingText = 'Privacy Policy' }) => {
+export default function PrivacyPolicy({ headingText = 'Privacy Policy' }) {
 	useEffect(() => {
 		document.title = 'Access | Privacy Policy';
 
@@ -574,4 +573,4 @@ export default ({ headingText = 'Privacy Policy' }) => {
 			</Container>
 		</>
 	);
-};
+}

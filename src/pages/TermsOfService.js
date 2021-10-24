@@ -32,7 +32,7 @@ const Text = styled.div`
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ headingText = 'Terms And Conditions' }) => {
+export default function TermsOfService ({ headingText = 'Terms And Conditions' }) {
 	return (
 		<>
 			<Header />

@@ -44,8 +44,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 	${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-15 transform -translate-x-2/3 text-primary-500`}
 `;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default ({
+export default function SingleCol({
 	subheading = 'FAQS',
 	heading = 'You have Questions ?',
 	description = 'And we have got answers to all of them.',
@@ -81,7 +80,7 @@ export default ({
 			answer: "The list doesn't stop growing for people are finding need for having these systems at their businesses",
 		},
 	],
-}) => {
+}) {
 	const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
 	const toggleQuestion = questionIndex => {
@@ -165,4 +164,4 @@ export default ({
 			<DecoratorBlob2 />
 		</Container>
 	);
-};
+}

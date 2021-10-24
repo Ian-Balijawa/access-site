@@ -14,7 +14,7 @@ import Faqs from './Faqs';
 import { useEffect } from 'react';
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+export default function Home() {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 	const HighlightedText = tw.span`text-primary-500`;
 
@@ -84,4 +84,4 @@ export default () => {
 			<Faqs header='false' />
 		</>
 	);
-};
+}

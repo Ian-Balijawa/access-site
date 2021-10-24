@@ -37,7 +37,7 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({
+export default function TwoColWithButton({
 	subheading = 'Our Expertise',
 	heading = (
 		<>
@@ -54,7 +54,7 @@ export default ({
 	imageDecoratorBlob = false,
 	imageDecoratorBlobCss = null,
 	textOnLeft = true,
-}) => {
+}) {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
 	return (
@@ -84,4 +84,4 @@ export default ({
 			</TwoColumn>
 		</Container>
 	);
-};
+}

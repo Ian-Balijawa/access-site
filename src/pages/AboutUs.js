@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 import Header from '../components/Header/light';
-// import FAQ from '../components/Faqs/SingleCol';
+import FAQ from '../components/Faqs/SingleCol';
 import TeamCardGrid from '../components/cards/TeamContainer';
 import Features from '../components/Features/ThreeColWithSideImage';
 
@@ -9,8 +9,7 @@ import ShieldIconImage from '../images/shield-icon.svg';
 import CustomerLoveIconImage from '../images/simple-icon.svg';
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+export default function AboutUs() {
 	return (
 		<>
 			<Header hiddenLink={'about'} />
@@ -41,7 +40,7 @@ export default () => {
 				linkText=''
 			/>
 			<TeamCardGrid subheading={<Subheading>Our Team</Subheading>} />
-			{/* <FAQ /> */}
+			<FAQ />
 		</>
 	);
-};
+}

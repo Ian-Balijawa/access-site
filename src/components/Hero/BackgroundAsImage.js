@@ -57,7 +57,7 @@ const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm
 const Link = styled(ReactRouterLink)`
 	border-radius: 20px;
 `;
-export default () => {
+export default function BackgroundAsImage() {
 	const navLinks = [
 		<NavLinks key={1}>
 			<NavLink href={ROUTES.ABOUT_US}>About</NavLink>
@@ -131,4 +131,4 @@ export default () => {
 			</HeroContainer>
 		</Container>
 	);
-};
+}

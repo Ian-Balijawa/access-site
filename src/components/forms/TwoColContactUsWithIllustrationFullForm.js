@@ -40,8 +40,7 @@ const Textarea = styled(Input).attrs({ as: 'textarea' })`
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default ({
+export default function TwoColContactUsWithIllustrationFullForm({
 	subheading = 'Contact Us',
 	heading = (
 		<>
@@ -54,7 +53,7 @@ export default ({
 	formAction = '#',
 	formMethod = 'get',
 	textOnLeft = true,
-}) => {
+}) {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 	const [emailAddress, setEmailAddress] = useState('');
 	const [name, setName] = useState('');
@@ -135,4 +134,4 @@ export default ({
 			</TwoColumn>
 		</Container>
 	);
-};
+}
