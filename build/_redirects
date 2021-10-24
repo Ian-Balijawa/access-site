@@ -1,0 +1,3 @@
+http://accessadvancedsystems.netlify.app/* https://accessadvancedsystems/:splat 301!
+https://accessadvancedsystems.netlify.app/* https://accessadvancedsystems/:splat 301!
+/*  /index.html  200
