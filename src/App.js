@@ -1,6 +1,5 @@
 import 'tailwindcss/dist/base.css';
-// import 'styles/globalStyles.css';
-
+import './App.css';
 /**
  *	This is the entry point component of this project.
  *  Use AnimationRevealPage as a wrapper component for your pages if you are building a custom one yourself
@@ -17,7 +16,6 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Pricing from './pages/Pricing';
 import Notfound from './pages/404';
 import Faqs from './pages/Faqs';
-
 import ThankYouPage from './pages/ThankYouPage';
 
 import {
@@ -29,9 +27,6 @@ import {
 import * as ROUTES from './constants/routes';
 
 export default function App() {
-	// If you want to disable the animation just use the disabled `prop` like below on your page's component
-	// return <AnimationRevealPage disabled>xxxxxxxxxx;
-
 	return (
 		<Router>
 			<Switch>

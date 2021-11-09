@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { PrimaryButton as PrimaryButtonBase } from '../../components/misc/Buttons';
@@ -6,16 +7,14 @@ import * as ROUTES from '../../constants/routes';
 
 import LogoImage from '../../images/logo.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebook-icon.svg';
-import { ReactComponent as TwitterIcon } from '../../images/twitter-icon.svg';
 import { ReactComponent as YoutubeIcon } from '../../images/youtube-icon.svg';
+import { ReactComponent as TwitterIcon } from '../../images/twitter-icon.svg';
 import { useState } from 'react';
 
-// const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Container = styled.div`
 	position: relative;
 	background: #e4e4e4;
 	color: #5e5d5d;
-	margin-bottom: 8px;
 	padding: 0 8px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -69,12 +68,18 @@ const SocialLink = styled.a`
 export default function Footer() {
 	const [emailAddress, setEmailAddress] = useState('');
 
+	const valid = emailAddress ? true : false;
+
 	const handleSubmit = e => {
 		e.preventDefault();
 
-		alert(
+		console.log(
 			`Your email Address ${emailAddress} has been successfully submitted`
 		);
+
+		setTimeout(() => {
+			setEmailAddress('');
+		}, 10000);
 	};
 	return (
 		<Container>
@@ -106,7 +111,7 @@ export default function Footer() {
 							</LinkListItem>
 						</LinkList>
 					</Column>
-					<SubscribeNewsletterColumn>
+					{/* <SubscribeNewsletterColumn>
 						<SubscribeNewsletterContainer>
 							<ColumnHeading>
 								Subscribe to our Newsletter and Youtube Channel
@@ -120,7 +125,7 @@ export default function Footer() {
 							<SubscribeForm
 								onSubmit={handleSubmit}
 								method='get'
-								action='#'
+								action='POST'
 							>
 								<Input
 									type='email'
@@ -130,12 +135,15 @@ export default function Footer() {
 									}
 									placeholder='Your Email Address'
 								/>
-								<SubscribeButton type='submit'>
+								<SubscribeButton
+									type='submit'
+									disabled={!valid}
+								>
 									Subscribe
 								</SubscribeButton>
 							</SubscribeForm>
 						</SubscribeNewsletterContainer>
-					</SubscribeNewsletterColumn>
+					</SubscribeNewsletterColumn> */}
 				</SixColumns>
 				<Divider />
 				<ThreeColRow>
@@ -147,14 +155,14 @@ export default function Footer() {
 						&copy; 2021 accessadvancedsystems All Rights Reserved.
 					</CopywrightNotice>
 					<SocialLinksContainer>
-						<SocialLink href='https://facebook.com'>
+						<SocialLink href='https://facebook.com/accessadvancedsystems'>
 							<FacebookIcon />
 						</SocialLink>
-						<SocialLink href='https://twitter.com'>
-							<TwitterIcon />
-						</SocialLink>
-						<SocialLink href='https://youtube.com'>
+						<SocialLink href='https://youtube.com/channel/UCeUIvpOeo4k4kS-uHG9kRpg'>
 							<YoutubeIcon />
+						</SocialLink>
+						<SocialLink href='https://twitter.com/channel/UCeUIvpOeo4k4kS-uHG9kRpg'>
+							<TwitterIcon />
 						</SocialLink>
 					</SocialLinksContainer>
 				</ThreeColRow>

@@ -3,7 +3,6 @@ import Header from '../components/Header/light';
 import FAQ from '../components/Faqs/SingleCol';
 import TeamCardGrid from '../components/cards/TeamContainer';
 import Features from '../components/Features/ThreeColWithSideImage';
-
 import SupportIconImage from '../images/support-icon.svg';
 import ShieldIconImage from '../images/shield-icon.svg';
 import CustomerLoveIconImage from '../images/simple-icon.svg';
@@ -28,13 +27,13 @@ export default function AboutUs() {
 						imageSrc: ShieldIconImage,
 						title: 'Strong Teams',
 						description:
-							'We have trust in our team do to the research and strong survey we carry to develop the systems. We work hand in hand to make sure we have the systems that match the clients busisness',
+							'We have trust in our team due to the research and strong survey we carry to develop the systems. We work hand in hand to make sure we have the systems that match the clients busisness',
 					},
 					{
 						imageSrc: CustomerLoveIconImage,
 						title: 'Customer Satisfaction',
 						description:
-							"Customers will always say anything they want to be added to their we'll add their requested features. We customize the system basing on the business operation",
+							"Customers will always say anything they want to be added to their systems and we'll add their requested features. We customize the system basing on the business operation",
 					},
 				]}
 				linkText=''

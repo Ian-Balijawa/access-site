@@ -12,7 +12,7 @@ const TeamCard = props => {
 		<div className='container'>
 			{team.map(member => (
 				<div className='card' key={id++}>
-					<img src={member.imageSrc} alt='member' />
+					<img src={member.imageSrc} alt={member.alt} />
 
 					<div className='meta'>
 						<span>

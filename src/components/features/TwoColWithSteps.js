@@ -58,6 +58,7 @@ export default function TwoColWithSteps({
 	imageDecoratorBlob = false,
 	textOnLeft = true,
 	steps = null,
+	alt = 'access team',
 	decoratorBlobCss = null,
 }) {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -90,6 +91,7 @@ export default function TwoColWithSteps({
 						imageBorder={imageBorder}
 						imageShadow={imageShadow}
 						imageRounded={imageRounded}
+						alt={alt}
 					/>
 					{imageDecoratorBlob && (
 						<DecoratorBlob css={decoratorBlobCss} />

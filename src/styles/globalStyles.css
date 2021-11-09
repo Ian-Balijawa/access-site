@@ -1,4 +1,5 @@
 /* Below animations are fore modal created using React-Modal */
+
 .ReactModal__Overlay {
     transition: transform 300ms ease-in-out;
     transition-delay: 100ms;
@@ -15,6 +16,7 @@
     transform: scale(0);
     /* transform: translateY(-150%); */
 }
+
 html, body {
     box-sizing: border-box;
     margin: 0;

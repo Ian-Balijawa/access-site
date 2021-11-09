@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from 'react-modal';
-import './index.css';
 import { render } from 'react-dom';
 import './index.css';
 import App from './App';

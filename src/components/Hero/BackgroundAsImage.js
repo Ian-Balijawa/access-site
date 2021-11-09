@@ -12,6 +12,8 @@ import Header, {
 } from '../Header/light.js';
 
 import { Link as ReactRouterLink } from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const StyledHeader = styled(Header)`
 	${tw`pt-8 max-w-none`}
@@ -58,10 +60,30 @@ const Link = styled(ReactRouterLink)`
 	border-radius: 20px;
 `;
 export default function BackgroundAsImage() {
+	const images = ['/images/team.jpg', 'images/mac-school-system.png'];
+	const [imageCounter, setImageCounter] = useState(0);
+	const [currentImage, setCurrentImage] = useState(images[imageCounter]);
+
+	setTimeout(() => {
+		setCurrentImage(images[imageCounter]);
+		if (imageCounter === images.length - 1) {
+			setImageCounter(0);
+		}
+		setImageCounter(imageCounter => imageCounter++);
+	}, 2000);
+
+	// useEffect(() => {
+	// 	setCurrentImage();
+	// }, [currentImage]);
+
 	const navLinks = [
 		<NavLinks key={1}>
-			<NavLink href={ROUTES.ABOUT_US}>About</NavLink>
-			<NavLink href={ROUTES.PRODUCTS}>Systems</NavLink>
+			<NavLink href={ROUTES.ABOUT_US} style={{ color: 'white' }}>
+				About
+			</NavLink>
+			<NavLink href={ROUTES.PRODUCTS} style={{ color: 'white' }}>
+				Systems
+			</NavLink>
 		</NavLinks>,
 		<NavLinks key={3}>
 			<PrimaryLink href={ROUTES.CONTACT_US}>Contact Us</PrimaryLink>
@@ -112,7 +134,7 @@ export default function BackgroundAsImage() {
 						</Link>
 					</LeftColumn>
 					<RightColumn>
-						<video
+						{/* <video
 							src='/videos/advert.mp4'
 							autoPlay
 							loop
@@ -125,7 +147,9 @@ export default function BackgroundAsImage() {
 								marginLeft: '15px',
 								boxShadow: '0px 0px 2px 4px #5668878c',
 							}}
-						/>
+						/> */}
+
+						<img src={currentImage} alt='hero-preview' />
 					</RightColumn>
 				</TwoColumn>
 			</HeroContainer>

@@ -18,7 +18,7 @@ const Subheading = tw(SubheadingBase)`text-center mb-3`;
 const Description = tw(SectionDescription)`mx-auto text-center`;
 
 export default function Team({
-	heading = 'Meet These Fine Folks.',
+	heading = 'Meet Our Team Folks.',
 	subheading = 'Our Team',
 	description = 'We have a very strong team that has altogether helped to build the company and its systems, all perfoming unique skills',
 }) {

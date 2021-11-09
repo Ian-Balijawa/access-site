@@ -1,5 +1,5 @@
 {
-	"name": "access-site",
+	"name": "accessadvancedsystems",
 	"version": "0.1.0",
 	"private": false,
 	"dependencies": {
@@ -29,7 +29,8 @@
 		"build": "craco build",
 		"test": "craco test",
 		"eject": "react-scripts eject",
-		"deploy": "yarn build && netlify deploy --prod --dir=build"
+		"deploy:netlify": "yarn build && netlify deploy --prod --dir=build",
+		"deploy:vercel": "vercel deploy --prod"
 	},
 	"eslintConfig": {
 		"extends": "react-app",
