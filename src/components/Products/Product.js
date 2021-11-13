@@ -12,6 +12,10 @@ const Product = () => {
 
 	let reactElementkey = 0;
 
+	/**
+	 *
+	 * @param {string} searchKey
+	 */
 	const handleSearch = searchKey => {
 		searchKey = searchKey.toLowerCase().trim();
 		let data = [...products];
