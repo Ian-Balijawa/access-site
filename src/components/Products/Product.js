@@ -13,7 +13,7 @@ const Product = () => {
 	let reactElementkey = 0;
 
 	const handleSearch = searchKey => {
-		searchKey = searchKey.toLowerCase();
+		searchKey = searchKey.toLowerCase().trim();
 		let data = [...products];
 		const filtered = data.filter(
 			product => product.name.split(' ')[0].toLowerCase() === searchKey
