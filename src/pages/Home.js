@@ -3,9 +3,7 @@ import Hero from '../components/Hero/BackgroundAsImage';
 import Features from '../components/Features/ThreeColWithSideImage';
 import MainFeature from '../components/Features/TwoColWithButton';
 import MainFeature2 from '../components/Features/TwoColWithTwoHorizontalFeaturesAndButton';
-import FeatureWithSteps from '../components/Features/TwoColWithSteps';
 import heroScreenshotImageSrc from '../images/team.jpg';
-import macHeroScreenshotImageSrc from '../images/mac-school-system.png';
 import prototypeIllustrationImageSrc from '../images/prototype-illustration.svg';
 import { ReactComponent as BriefcaseIcon } from 'feather-icons/dist/icons/briefcase.svg';
 import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sign.svg';
@@ -39,7 +37,7 @@ export default function Home() {
 				imageBorder={true}
 				imageDecoratorBlob={true}
 			/>
-			<FeatureWithSteps
+			{/* <FeatureWithSteps
 				subheading={<Subheading>STEPS</Subheading>}
 				heading={
 					<>
@@ -51,7 +49,7 @@ export default function Home() {
 				imageSrc={macHeroScreenshotImageSrc}
 				imageDecoratorBlob={true}
 				decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
-			/>
+			/> */}
 			<MainFeature2
 				subheading={<Subheading>VALUES</Subheading>}
 				heading={

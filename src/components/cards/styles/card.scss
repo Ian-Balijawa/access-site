@@ -19,6 +19,14 @@
         border-radius: 5px;
         border: 1px solid #ccc;
 
+        .img{
+            width: 18rem;
+            height:fit-content;
+            background-image: url('../../../images/musoke.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
         .meta {
             display: flex;
             justify-content: space-between;

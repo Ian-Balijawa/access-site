@@ -17,7 +17,7 @@ export default function ContactUs() {
 	return (
 		<>
 			<Header hiddenLink={'contact'} />
-			<ContactUsForm />
+			{/* <ContactUsForm /> */}
 			<ContactDetails
 				cards={[
 					{

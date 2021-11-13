@@ -35,6 +35,16 @@
   border: 1px solid #ccc;
 }
 
+.container .card .img {
+  width: 18rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url("../../../images/musoke.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .container .card .meta {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -12,8 +12,6 @@ import Header, {
 } from '../Header/light.js';
 
 import { Link as ReactRouterLink } from 'react-router-dom';
-import { useState } from 'react';
-import { useEffect } from 'react';
 
 const StyledHeader = styled(Header)`
 	${tw`pt-8 max-w-none`}
@@ -27,7 +25,6 @@ const StyledHeader = styled(Header)`
 const Container = styled.div`
 	${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
 	background: rgb(0,0,10);
-	/* background-image: url('https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); */
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
@@ -60,22 +57,6 @@ const Link = styled(ReactRouterLink)`
 	border-radius: 20px;
 `;
 export default function BackgroundAsImage() {
-	const images = ['/images/team.jpg', 'images/mac-school-system.png'];
-	const [imageCounter, setImageCounter] = useState(0);
-	const [currentImage, setCurrentImage] = useState(images[imageCounter]);
-
-	setTimeout(() => {
-		setCurrentImage(images[imageCounter]);
-		if (imageCounter === images.length - 1) {
-			setImageCounter(0);
-		}
-		setImageCounter(imageCounter => imageCounter++);
-	}, 2000);
-
-	// useEffect(() => {
-	// 	setCurrentImage();
-	// }, [currentImage]);
-
 	const navLinks = [
 		<NavLinks key={1}>
 			<NavLink href={ROUTES.ABOUT_US} style={{ color: 'white' }}>
@@ -134,22 +115,7 @@ export default function BackgroundAsImage() {
 						</Link>
 					</LeftColumn>
 					<RightColumn>
-						{/* <video
-							src='/videos/advert.mp4'
-							autoPlay
-							loop
-							muted
-							style={{
-								maxWidth: '95%',
-								alignSelf: 'center',
-								height: 'auto',
-								borderRadius: '5px',
-								marginLeft: '15px',
-								boxShadow: '0px 0px 2px 4px #5668878c',
-							}}
-						/> */}
-
-						<img src={currentImage} alt='hero-preview' />
+						<img src='/images/cover.png' alt='hero-preview' />
 					</RightColumn>
 				</TwoColumn>
 			</HeroContainer>
